@@ -1,0 +1,62 @@
+.accordion-body {
+    padding-left: 0;
+    .form-group {
+        .main-checkbox {
+            + label {
+                color: $default-text-color;
+                &:before {
+                    border: 1px solid #707070;
+                    border-radius: 3px;
+                }
+            }
+            &:checked {
+                + label {
+                    &::before {
+                        background-color: $default-text-color;
+                        border: 1px solid $default-text-color;
+                    }
+                    &::after {
+                        top: 5px;
+                        left: 6px;
+                        width: 6px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+    }
+    &.colors-parent {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        li {
+            .color-filter {
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                margin-right: 15px;
+                border: none;
+            }
+            &:first-of-type {
+                .color-filter {
+                    background-color: #F7E0E0;
+                }
+            }
+            &:nth-of-type(2) {
+                .color-filter {
+                    background-color: #8DCFAD;
+                }
+            }
+            &:nth-of-type(3) {
+                .color-filter {
+                    background-color: #006AB1;
+                }
+            }
+            &:last-of-type {
+                .color-filter {
+                    background-color: #FCF4B7;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.static-page {
+    .main-title {
+        margin: 60px 45px;
+        @media #{$mobile} {
+            margin: 30px 20px 40px;
+        }
+    }
+    p {
+        color: #181818;
+        @media #{$mobile} {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,120 @@
+.plan-ur-party {
+    margin-bottom: 50px;
+    .custom-container {
+        > .row {
+            margin: 0;
+            > .col-12 {
+                @media #{$ipadPro} {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+                &:first-child {
+                    @media #{$mobile} {
+                        margin-bottom: 20px;
+                    }
+                    @media #{$ipadPro} {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .row {
+        .row {
+            height: 100%;
+            > div {
+                height: 50%;
+                width: 50%;
+                padding: 0;
+                &:first-child,
+                &:nth-child(2) {
+                    img {
+                        padding-top: 0 !important;
+                    }
+                }
+                &:nth-child(3),
+                &:nth-child(4) {
+                    img {
+                        padding-bottom: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+.plan-ur-party__info {
+    border: 1px solid rgba($color: $default-text-color, $alpha: 0.2);
+    padding: 50px 20px;
+    height: 100%;
+    @media #{$mobile} {
+        padding: 30px 20px 0;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 17px;
+        color: $default-text-color;
+        @media #{$mobile} {
+            font-size: 15px;
+        }
+    }
+    .main-btn {
+        display: inline-block;
+        width: 123px;
+        margin-top: 20px;
+        text-align: center;
+        line-height: 43px;
+        @media #{$mobile} {
+            line-height: 38px;
+            margin-top: 5px;
+        }
+    }
+}
+.plan-ur-party__title {
+    font-size: 35px;
+    color: $default-text-color;
+    line-height: 50px;
+    margin-bottom: 24px;
+    @media #{$mobile} {
+        font-size: 26px;
+        line-height: 34px;
+        margin-bottom: 12px;
+    }
+}
+.plan-ur-party-card {
+    position: relative;
+    height: 100%;
+    > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 5px;
+    }
+    > a {
+        background-color: rgba($color: $white-color, $alpha: 0.44);
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 19px;
+        color: $default-text-color;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px 50px;
+        min-width: 260px;
+        text-align: center;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+        @media #{$mobile} {
+            font-size: 14px;
+            padding: 10px 20px;
+            min-width: 150px;
+        }
+        &:hover {
+            background-color: rgba($color: $white-color, $alpha: 0.82);
+            padding: 30px 100px;
+            @media #{$mobile} {
+                padding: 20px 30px;
+            }
+        }
+    }
+}

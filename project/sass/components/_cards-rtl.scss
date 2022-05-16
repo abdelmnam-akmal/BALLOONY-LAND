@@ -1,0 +1,37 @@
+.card {
+    .card-body {
+        .heart {
+            left: 3px;
+            right: auto;
+        }
+        .card-text {
+            padding-right: 0;
+            padding-left: 55px;
+        }
+        div {
+            button {
+                img {
+                    margin-left: 0;
+                    margin-right: 13px;
+                }
+                &:after {
+                    right: auto;
+                    left: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+// Address Card
+.address-card {
+    .address-card__title {
+        padding-right: 0;
+        padding-left: 70px;
+    }
+    .address-card__actions {
+        right: auto;
+        left: 17px;
+    }
+}

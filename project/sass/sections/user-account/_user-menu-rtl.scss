@@ -1,0 +1,12 @@
+.user-menu {
+    margin-right: 0;
+    margin-left: 30px;
+}
+.user-menu__info {
+    @media #{$mobile} {
+        &::before {
+            right: auto;
+            left: 15px;
+        }
+    }
+}

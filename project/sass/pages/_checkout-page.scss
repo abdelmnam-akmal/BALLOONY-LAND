@@ -1,0 +1,141 @@
+.checkout-page {
+    padding-top: 50px;
+    @media #{$mobile} {
+        padding-top: 25px;
+    }
+    .checkout-content {
+        @media #{$ipadPro} {
+            width: 60%;
+        }
+        > div {
+            .title-checkout {
+                font-weight: 600;
+                margin-bottom: 25px;
+                @media #{$mobile} {
+                    margin-bottom: 5px;
+                }
+            }
+            .span-address {
+                display: block;
+                margin-bottom: 25px;
+            }
+            .checkout-address {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                li {
+                    width: 270px;
+                    min-height: 170px;
+                    margin-right: 25px;
+                    padding: 15px;
+                    background-color: #EDF7F2;
+                    border-radius: 3px;
+                    box-shadow: 0px 2px 4px #00000014;
+                    @media #{$maxSmallMobile} {
+                        margin-right: 0;
+                        width: 100%;
+                        min-height: initial;
+                    }
+                    .main-checkbox {
+                        + label {
+                            font-weight: bold;
+                            &:before {
+                                border: 2px solid #2A2B2C;
+                                border-radius: 50%;
+                            }
+                        }
+                        &:checked {
+                            + label {
+                                &::before {
+                                    background-color: $white-color;
+                                }
+                                &::after {
+                                    top: 5.5px;
+                                    left: 4px;
+                                    width: 12px;
+                                    height: 12px;
+                                    background-color: #2A2B2C;
+                                    border-radius: 50%;
+                                    border: none;
+                                    transform: none;
+                                    @media #{$mobile} {
+                                        top: 4px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    address {
+                        font-size: 15px;
+                        color: #181818;
+                        padding-left: 35px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .btns-address {
+                .main-btn {
+                    width: 220px;
+                    height: 45px;
+                    padding-right: 45px;
+                    font-size: 14px;
+                    line-height: 35px;
+                    position: relative;
+                    &:after {
+                        content: '\f067';
+                        font-family: 'Font Awesome 5 Free';
+                        background-color: $white-color;
+                        position: absolute;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        color: $green-color;
+                        margin-left: 15px;
+                        line-height: 37px;
+                    }
+                    &:hover {
+                        &:after {
+                            content: '\f067';
+                            font-family: 'Font Awesome 5 Free';
+                            background-color: $green-color;
+                            position: absolute;
+                            width: 35px;
+                            height: 35px;
+                            border-radius: 50%;
+                            color: $white-color;
+                            margin-left: 15px;
+                            line-height: 37px;
+                        }
+                    }
+                }
+                .return-to-cart {
+                    background-color: #F8FCFA;
+                    border: 1px solid $green-color;
+                    color: $green-color;
+                    height: 45px;
+                    width: 200px;
+                    padding: 0;
+                    font-weight: bold;
+                    border-radius: 3px;
+                    line-height: 30px;
+                    font-size: 14px;
+                    margin-left: 20px;
+                    @media #{$maxSmallMobile} {
+                        margin-left: 0;
+                        margin-top: 15px;
+                        width: 220px;
+                    }
+                }
+            }
+        }
+    }
+    .product-delivery {
+        padding-top: 0;
+        @media #{$mobile} {
+            margin-top: 40px;
+        }
+        @media #{$ipadPro} {
+            width: 40%;
+        }
+    }
+}

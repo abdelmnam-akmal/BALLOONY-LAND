@@ -1,0 +1,22 @@
+.related-product {
+    background-color: #F8FCFA;
+    padding: 50px 0 100px;
+    .main-title {
+        font-size: 30px;
+        margin-bottom: 70px;
+        @media #{$mobile} {
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+        &:before {
+            background-color: #8DCFAD;
+        }
+    }
+    .cards-content {
+        padding: 0 7px 20px;
+        .card {
+            background-color: $white-color;
+            margin: 0 5px;
+        }
+    }
+}

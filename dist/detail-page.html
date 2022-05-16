@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>Detail Page</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+        <!-- Fontawesome 5 -->
+        <link rel="stylesheet" href="css/fontawesome.min.css"/>
+
+        <!-- RateYou Default Style -->
+        <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+
+        <!-- Select 2 -->
+        <link rel="stylesheet" href="css/select2.min.css"/>
+        
+        <!-- Slick CSS -->
+        <link rel="stylesheet" href="css/slick.css" />
+
+        <!-- Ion Range Style -->
+        <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+
+        <!-- Google Fonts --> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Montserrat:wght@400;600;700;900&display=swap" />
+
+        <!-- Style file -->
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+
+    <body>
+
+        <!-- START :: Top Nav -->
+        <section class="top-nav">
+            <div class="container">
+                <div class="top-nav-icons d-flex justify-content-end align-items-center">
+                    <div class="top-nav-icons__main-icons">
+                        <a href="#">
+                            <img src="./images/icons/cart-icon.svg" alt="Cart" title="Cart"/>
+                            <span class="cart-count"> 01 </span>
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/heart-icon.svg" alt="Favorite" title="Favorite"/>
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/search-icon.svg" alt="Search" title="Search"/>
+                        </a>
+                    </div>
+                    <!-- END :: Main Icons -->
+                    <div class="top-nav-icons__dropdown-icons d-flex">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./images/icons/user-icon.svg" alt="User" title="User" />
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li>
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./images/icons/language-icon.svg" alt="language" title="language" />
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <li>
+                                    <a class="dropdown-item" href="#">English</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Arabic</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END :: Dropdown Icons -->
+                </div>
+            </div>
+        </section>
+        <!-- END :: Top Nav -->
+
+        <!-- START :: Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/icons/logo.svg" alt="Balloony Land" title="Balloony Land" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">Balloons</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Toys</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Party Supplies</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Catering</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link" href="#">Occasions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Party</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Customize</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Track Order</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END :: Navbar -->
+
+        <!-- START :: Top Header -->
+        <section class="top-header equal-nav-height">
+            <div class="overlay"></div>
+            <img src="./images/global/baby-nav-bg.png" alt="Terms and Conditions"/>
+        </section>
+        <!-- END :: Top Header -->
+
+        <!-- START :: breadcrumb -->
+        <section class="breadcrumb-content" aria-label="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item text-uppercase"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item text-uppercase"><a href="#">Categories</a></li>
+                    <li class="breadcrumb-item text-uppercase"><a href="#">Toys</a></li>
+                    <li class="breadcrumb-item text-uppercase active" aria-current="page"><a href="#">Title</a></li>
+                  </ol>
+            </div>
+        </section>
+        <!-- END :: breadcrumb -->
+
+        <!-- START :: Product Details -->
+        <section class="product-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-5 images-modal-container">
+                        <div class="modal-left-img">
+                            <img class="imgs-slide" src="images/global/card-image.svg" alt="modal-toys">
+                            <img class="imgs-slide" src="images/global/card-image-2.svg" alt="modal-toys">
+                            <img class="imgs-slide" src="images/global/card-image-3.svg" alt="modal-toys">
+                            <img class="imgs-slide" src="images/global/card-image.svg" alt="modal-toys">
+                        </div>
+                        <div class="modal-right-img">
+                            <!-- add this class "sale" if the product was sale -->
+                            <span class="d-block sale text-uppercase">Sale</span>
+                            <img id="cardDisplay" src="images/global/card-image.svg" alt="modal-toys">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7 product-review">
+                        <div class="modal-info">
+                            <div class="info-title">
+                                <div>
+                                    <h2 class="h2 text-uppercase title-product">Product Title Here</h2>
+                                    <button type="button" class="btn rate-product" data-bs-toggle="modal" data-bs-target="#feedbackModal">Rate This Product</button>
+                                </div>
+                                <div class="rate-you-content">
+                                    <div class="rate-you" id="rateYo"></div>
+                                    <span class="review">10 Reviews</span>
+                                </div>
+                            </div>
+                            <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iste natus libero, voluptatem perspiciatis atque et cupiditate perferendis quidem enim accusantium nam optio reiciendis explicabo reprehenderit deserunt? Harum, labore obcaecati.</p>
+                            <span class="dimesnions">Dimesnions 30×50</span>
+
+                            <!-- please Add this Element to Display the Date
+                                <span class="display-date">Today 7-10 PM</span>
+                             -->
+
+                            <div class="product-num">
+                                <select name="sort-by" class="form-select" aria-label="Default select example">
+                                    <option> Type </option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <select name="sort-by" class="form-select" aria-label="Default select example">
+                                    <option> Size </option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <select name="sort-by" class="form-select" aria-label="Default select example">
+                                    <option> Color </option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <div class="d-flex align-items-center">
+                                    <button id="decrease" class="btn minus"><img src="images/icons/minus-icon.svg" alt="minus"></button>
+                                    <input id="inputCounter" type="text" value="3" name="number" readonly>
+                                    <button id="increase" class="btn plus"><img src="images/icons/plus-icon.svg" alt="plus"></button>
+                                </div>
+                            </div>
+
+                            <!-- Please add this Element to Display the error
+                                <span class="d-error">You can choose maximum 3 lines</span>
+                            -->
+
+                            <div class="price-product">
+                                <!-- Please add this class "card-disc" if the product has a discount -->
+                                <span class="price-disc">29.000 KWD</span>
+                                <span class="price">21.000 KWD</span>
+                            </div>
+                            <div class="btns-product">
+                                <button type="button" class="main-btn text-uppercase edit-btn">edit <i class="far fa-edit"></i></button>
+                                <button type="button" class="text-uppercase add-to-cart-btn out-of-stock">out of stock</button>
+                                <button type="button" class="text-uppercase add-to-cart-btn customize-btn">Customize <img src="images/icons/click-hand.svg" alt="Customize"></button>
+                                <button type="button" class="text-uppercase add-to-cart-btn">add to cart <img src="images/icons/cart.svg" alt="add-to-cart"></button>
+                                <button type="button" class="text-uppercase favorite-btn">favorites <img src="images/icons/favorite-heart.svg" alt="favorites-icon"></button>
+                                <button type="button" class="text-uppercase share-btn"><img src="images/icons/share.svg" alt="share"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END :: Product Details -->
+
+        <!-- START :: product-reviews -->
+        <section class="product-review">
+            <div class="container">
+                <ul class="list-unstyled product-info nav" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="btn text-uppercase nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">product details</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="btn text-uppercase nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">reviews</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, animi nam minus minima a doloribus atque quia placeat aperiam quo sequi quaerat modi cupiditate magni, consectetur ratione facere veritatis voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, animi nam minus minima a doloribus atque quia placeat aperiam quo sequi quaerat modi cupiditate magni, consectetur ratione facere veritatis voluptatibus! Laudantium, animi nam minus minima a doloribus atque quia placeat aperiam quo sequi quaerat modi cupiditate magni, consectetur ratione facere veritatis voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, animi nam minus minima a doloribus atque quia placeat aperiam quo sequi quaerat modi cupiditate magni, consectetur ratione facere veritatis voluptatibus!</p>
+                        <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, animi nam minus minima a doloribus atque quia placeat aperiam quo sequi quaerat modi cupiditate magni, consectetur ratione facere veritatis voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, animi nam minus minima a doloribus atque quia placeat aperiam quo sequi quaerat modi cupiditate magni, consectetur ratione facere veritatis voluptatibus!</p>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div>
+                            <div class="user-rate d-flex align-items-center justify-content-between">
+                                <div class="user-info">
+                                    <h5 class="text-uppercase user-name">USER NAME</h5>
+                                    <span class="d-date">14 July 2021</span>
+                                </div>
+                                <div class="rate-you" id="rateProduct"></div>
+                            </div>
+                            <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, animi nam minus minima a doloribus atque quia placeat aperiam quo sequi quaerat modi cupiditate magni, consectetur ratione facere veritatis voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, animi nam minus minima a doloribus atque quia placeat aperiam quo sequi quaerat modi cupiditate magni, consectetur ratione facere veritatis voluptatibus!</p>
+                        </div>
+                        <div>
+                            <div class="user-rate d-flex align-items-center justify-content-between">
+                                <div class="user-info">
+                                    <h5 class="text-uppercase user-name">user name</h5>
+                                    <span class="d-date">14 July 2021</span>
+                                </div>
+                                <div class="rate-you" id="rateProduct-2"></div>
+                            </div>
+                            <p class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, animi nam minus minima a doloribus atque quia placeat aperiam quo sequi quaerat modi cupiditate magni, consectetur ratione facere veritatis voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, animi nam minus minima a doloribus atque quia placeat aperiam quo sequi quaerat modi cupiditate magni, consectetur ratione facere veritatis voluptatibus!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- END :: product-reviews -->
+
+        <!-- START :: Related Products -->
+        <section class="related-product">
+            <div class="container">
+                <h5 class="text-uppercase main-title text-center">related product</h5>
+                <div class="cards-content d-flex align-items-center justify-content-between">
+                    <div class="card"> <!-- START :: card -->
+                        <img src="images/global/card-image.svg" class="card-img-top" alt="card-image">
+                        <div class="card-body">
+                            <i class="fas fa-heart heart"></i>
+                            <span class="h5 product-title text-uppercase">Product Name</span>
+                            <p class="card-text">Some quick example text to build on the card title</p>
+                            <span class="starting"> Starting From </span>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="card-price d-block">21.000 KWD</span>
+                                </div>
+                                <button type="button" class="text-uppercase add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#addToCart">add to cart <img src="images/icons/cart.svg" alt="cart-icon"></button>
+                                <!-- Please add this button in Custom-Listing Page 
+                                    <button type="button" class="text-uppercase add-to-cart-btn customize-btn">Customize <img src="images/icons/click-hand.svg" alt="cart-icon"></button>
+                                -->
+                            </div>
+                        </div>
+                    </div> <!-- END :: card -->
+                    <div class="card"> <!-- START :: card -->
+                        <img src="images/global/card-image.svg" class="card-img-top" alt="card-image">
+                        <div class="card-body">
+                            <i class="fas fa-heart heart"></i>
+                            <span class="h5 product-title text-uppercase">Product Name</span>
+                            <p class="card-text">Some quick example text to build on the card title</p>
+                            <span class="starting"> Starting From </span>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="card-price d-block">21.000 KWD</span>
+                                </div>
+                                <button type="button" class="text-uppercase add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#addToCart">add to cart <img src="images/icons/cart.svg" alt="cart-icon"></button>
+                                <!-- Please add this button in Custom-Listing Page 
+                                    <button type="button" class="text-uppercase add-to-cart-btn customize-btn">Customize <img src="images/icons/click-hand.svg" alt="cart-icon"></button>
+                                -->
+                            </div>
+                        </div>
+                    </div> <!-- END :: card -->
+                    <div class="card"> <!-- START :: card -->
+                        <img src="images/global/card-image.svg" class="card-img-top" alt="card-image">
+                        <div class="card-body">
+                            <i class="fas fa-heart heart"></i>
+                            <span class="h5 product-title text-uppercase">Product Name</span>
+                            <p class="card-text">Some quick example text to build on the card title</p>
+                            <span class="starting"> Starting From </span>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="card-price d-block">21.000 KWD</span>
+                                </div>
+                                <button type="button" class="text-uppercase add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#addToCart">add to cart <img src="images/icons/cart.svg" alt="cart-icon"></button>
+                                <!-- Please add this button in Custom-Listing Page 
+                                    <button type="button" class="text-uppercase add-to-cart-btn customize-btn">Customize <img src="images/icons/click-hand.svg" alt="cart-icon"></button>
+                                -->
+                            </div>
+                        </div>
+                    </div> <!-- END :: card -->
+                    <div class="card"> <!-- START :: card -->
+                        <img src="images/global/card-image-2.svg" class="card-img-top" alt="card-image">
+                        <div class="card-body">
+                            <!-- Please add class "active" to this icon if the user loved the product -->
+                            <i class="fas fa-heart heart active"></i>
+                            <span class="h5 product-title text-uppercase">Product Name</span>
+                            <p class="card-text">Some quick example text to build on the card title</p>
+                            <span class="starting"> Starting From </span>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="card-price d-block">21.000 KWD</span>
+                                </div>
+                                <button type="button" class="text-uppercase add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#addToCart">add to cart <img src="images/icons/cart.svg" alt="cart-icon"></button>
+                                <!-- Please add this button in Custom-Listing Page 
+                                    <button type="button" class="text-uppercase add-to-cart-btn customize-btn">Customize <img src="images/icons/click-hand.svg" alt="cart-icon"></button>
+                                -->
+                            </div>
+                        </div>
+                    </div> <!-- END :: card -->
+                    <div class="card"> <!-- START :: card -->
+                        <img src="images/global/card-image-3.svg" class="card-img-top" alt="card-image">
+                        <div class="card-body">
+                            <i class="fas fa-heart heart"></i>
+                            <span class="h5 product-title text-uppercase">Product Name</span>
+                            <p class="card-text">Some quick example text to build on the card title</p>
+                            <span class="starting"> Starting From </span>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="card-price d-block">21.000 KWD</span>
+                                </div>
+                                <button type="button" class="text-uppercase add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#addToCart">add to cart <img src="images/icons/cart.svg" alt="cart-icon"></button>
+                                <!-- Please add this button in Custom-Listing Page 
+                                    <button type="button" class="text-uppercase add-to-cart-btn customize-btn">Customize <img src="images/icons/click-hand.svg" alt="cart-icon"></button>
+                                -->
+                            </div>
+                        </div>
+                    </div> <!-- END :: card -->
+                    <div class="card"> <!-- START :: card -->
+                        <img src="images/global/card-image.svg" class="card-img-top" alt="card-image">
+                        <div class="card-body">
+                            <!-- Please add class "active" to this icon if the user loved the product -->
+                            <i class="fas fa-heart heart active"></i>
+                            <span class="h5 product-title text-uppercase">Product Name</span>
+                            <p class="card-text">Some quick example text to build on the card title</p>
+                            <span class="starting"> Starting From </span>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="card-price d-block">21.000 KWD</span>
+                                </div>
+                                <button type="button" class="text-uppercase add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#addToCart">add to cart <img src="images/icons/cart.svg" alt="cart-icon"></button>
+                                <!-- Please add this button in Custom-Listing Page 
+                                    <button type="button" class="text-uppercase add-to-cart-btn customize-btn">Customize <img src="images/icons/click-hand.svg" alt="cart-icon"></button>
+                                -->
+                            </div>
+                        </div>
+                    </div> <!-- END :: card -->
+                </div>
+            </div>
+        </section>
+        <!-- END :: Related Products -->
+
+        <!-- START :: feedback modal -->
+        <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header header-feedback">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-info">
+                            <div class="text-center">
+                                <h2 class="h2 text-uppercase title-feedback">give us your feedback</h2>
+                                <span class="review">About This Product</span>
+                            </div>
+                            <form class="form-feedback text-center">
+                                <div class="rate-you" id="feedBack"></div>
+                                <textarea name="feedback" placeholder="Write a Review ..."></textarea>
+                                <button type="button" class="btn main-btn text-uppercase">submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- START :: feedback modal -->
+
+
+        <!-- START :: Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="logo-and-menu d-flex justify-content-between">
+                    <a href="#" class="footer-logo">
+                        <img src="./images/icons/second-logo.svg" alt="Balloony" title="Balloony" />
+                    </a>
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <ul class="list-unstyled menu-list">
+                                <li>
+                                    <a href="#"> Privacy Policy </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Terms and Conditions </a>
+                                </li>
+                                <li>
+                                    <a href="#"> About Us </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <ul class="list-unstyled menu-list">
+                                <li>
+                                    <a href="#"> Delivery Policy </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Track Order </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <ul class="list-unstyled menu-list">
+                                <li>
+                                    <a href="#"> FAQs </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Contact Us </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <div class="footer-social-media">
+                                <p> FIND US </p>
+                                <div class="">
+                                    <a href="#" title="instagram">
+                                        <img src="./images/icons/instagram.svg" alt="instagram" title="instagram" />
+                                    </a>
+                                    <a href="#" title="twitter">
+                                        <img src="./images/icons/twitter.svg" alt="twitter" title="twitter" />
+                                    </a>
+                                    <a href="#" title="whatsapp">
+                                        <img src="./images/icons/whatsapp.svg" alt="whatsapp" title="whatsapp" />
+                                    </a>
+                                    <a href="#" title="facebook">
+                                        <img src="./images/icons/facebook.svg" alt="facebook" title="facebook" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <p>
+                            © 2022. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <p>
+                            Powered By Lorem Ipsum
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END :: Footer -->
+
+        <!-- JavaScript files -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/select2.min.js"></script> <!-- Select 2 Plugin -->
+        <script src="js/jquery.rateyo.min.js"></script> <!-- RateYou Plugin -->
+        <script src="js/slick.min.js"></script> <!-- Slick Slider -->
+        <script src="js/ion.rangeSlider.min.js"></script> <!-- Ion Range Plugin -->
+        <script src="js/script.js"></script>
+    </body>
+</html>

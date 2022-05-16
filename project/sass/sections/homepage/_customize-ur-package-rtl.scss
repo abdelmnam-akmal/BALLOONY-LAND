@@ -1,0 +1,15 @@
+.customize-ur-package__start-now,
+.customize-ur-package__title {
+    text-align: left;
+    @media #{$mobile} {
+        text-align: center;
+    }
+}
+.customize-ur-package__desc {
+    padding-left: 0;
+    padding-right: 130px;
+    @media #{$ipadPro} {
+        padding-left: 0;
+        padding-right: 65px;
+    }
+}

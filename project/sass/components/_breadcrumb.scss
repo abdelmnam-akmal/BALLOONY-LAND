@@ -1,0 +1,31 @@
+.breadcrumb-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $light-green-color;
+    @media #{$mobile} {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    .breadcrumb {
+        .breadcrumb-item {
+            display: inline-flex;
+            align-items: center;
+            a {
+                font-size: 14px;
+                color: $default-text-color;
+                letter-spacing: 0.56px;
+                @media #{$mobile} {
+                    font-size: 9px;
+                }
+            }
+            &.active {
+                a {
+                    font-weight: 600;
+                }
+            }
+            &::before {
+                color: $default-text-color;
+            }
+        }
+    }
+}

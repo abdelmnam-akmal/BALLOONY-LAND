@@ -1,0 +1,15 @@
+.homepage-slider {
+    .carousel-caption {
+        text-align: right;
+        h1, p {
+            @media #{$mobile} {
+                padding-right: 0;
+                padding-left: 20px;
+            }
+        }
+    }
+    .carousel-indicators {
+        left: 0;
+        right: auto;
+    }
+}

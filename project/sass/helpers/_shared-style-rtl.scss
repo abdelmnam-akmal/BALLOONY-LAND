@@ -1,0 +1,46 @@
+/* =====[Start: Global rules]===== */
+* {
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+.select2 {
+    .select2-results__option--selectable {
+        text-align: right;
+    }
+    .select2-selection__arrow { 
+        left: 10px !important;
+    }
+}
+
+// Product summary and delivery
+.product-delivery {
+    .product-promo-code {
+        .input-code {
+            input {
+                padding-right: 8px;
+                padding-left: 135px;
+            }
+            button {
+                right: auto;
+                left: 5px;
+            }
+        }
+        .promo-code {
+            text-align: left;
+        }
+    }
+}
+
+// Google Map
+.google-map-wrapper {
+    > img {
+          right: auto !important;
+          left: 55px !important;
+          @media #{$mobile} {
+            left: 20px !important;
+        }
+    }
+}
+
+/* =====[End: Global rules]===== */

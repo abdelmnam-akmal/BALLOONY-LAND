@@ -1,0 +1,12 @@
+.accordion-body {
+    padding-left: 1.25rem;
+    padding-right: 0;
+    &.colors-parent {
+        li {
+            .color-filter {
+                margin-right: 0;
+                margin-left: 15px;
+            }
+        }
+    }
+}

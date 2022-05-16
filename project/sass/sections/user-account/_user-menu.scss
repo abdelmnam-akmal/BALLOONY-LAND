@@ -1,0 +1,115 @@
+.user-account {
+    padding: 45px 0;
+    @media #{$mobile} {
+        padding: 30px 0;
+    }
+    > .container {
+        @media #{$mobile} {
+            flex-direction: column;
+        }
+    }
+}
+.user-menu {
+    background-color: $light-green-color;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 0 0 270px;
+    max-width: 270px;
+    margin-right: 30px;
+    @media #{$mobile} {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 0 0 40px!important;
+    }
+}
+.user-menu__info {
+    background-color: $white-color;
+    border-radius: 5px;
+    padding: 20px 10px;
+    margin-bottom: 25px;
+    @media #{$mobile} {
+        padding: 14px 10px;
+        margin-bottom: 15px;
+        position: relative;
+        &::before {
+            content: "";
+            background: url('../images/Icons/to-bottom-2.png') no-repeat center center;
+            background-size: contain;
+            width: 15px;
+            height: 17px;
+            display: block;
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+            transition: all 0.3s ease-in-out;
+        }
+        &.expanded {
+            &::before {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    h3 {
+        font: {
+            size: 18px;
+            weight: normal;
+        };
+        line-height: 18px;
+        margin-bottom: 5px;
+        color: $black-color;
+        @media #{$mobile} {
+            font-size: 15px;
+        }
+    }
+    p {
+        color: rgba($color: #181818, $alpha: 0.45);
+        font: {
+            size: 17px;
+            weight: normal;
+        };
+        line-height: 22px;
+        margin-bottom: 0;
+        @media #{$mobile} {
+            font-size: 14px;
+        }
+    }
+}
+.user-menu__links {
+    padding: 0 15px;
+    @media #{$mobile} {
+        display: none;
+    }
+    li {
+        &:not(:last-child) {
+            margin-bottom: 12px;
+            @media #{$mobile} {
+                margin-bottom: 8px;
+            }
+        }
+        a {
+            color: #181818;
+            font: {
+                size: 16px;
+                weight: normal;
+            };
+            line-height: 22px;
+            height: 45px;
+            width: 100%;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            @media #{$mobile} {
+                height: 35px;
+                font-size: 14px;
+            }
+            &:hover,
+            &.active {
+                background-color: $green-color;
+                color: $white-color;
+                font-weight: bold;
+            }
+        }
+    }   
+}

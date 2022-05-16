@@ -1,0 +1,31 @@
+.payment-page {
+    .checkout-content {
+        > div {
+            .checkout-address {
+                li {
+                    .main-checkbox {
+                        &:checked {
+                            + label {
+                                &::after {
+                                    top: 6px;
+                                }
+                            }
+                        }
+                    }
+                    .address-payment {
+                        padding: 20px 60px 20px 35px;
+                        .btn-address {
+                            right: auto;
+                            left: 10px;
+                        }
+                    }
+                }
+            }
+            .btns-address {
+                .continue-shopping {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

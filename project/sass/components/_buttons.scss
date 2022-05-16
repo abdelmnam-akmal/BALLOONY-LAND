@@ -1,0 +1,102 @@
+// Main Button
+.main-btn {
+    border-radius: 3px;
+    background-color: $green-color;
+    text-transform: uppercase;
+    width: 127px;
+    height: 40px;
+    box-shadow: 0px 4px 19px #273C3230;
+    font: {
+        size: 16px;
+        weight: 600;
+    };
+    line-height: 31px;
+    color: $white-color;
+    border: none;
+    transition: all 0.3s;
+    @media #{$mobile} {
+        width: 120px;
+        height: 35px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    &:hover,
+    &:focus {
+        background-color: #EDF7F2;
+        color: $green-color;
+        border: 1px solid $green-color;
+        box-shadow: none;
+    }
+    &.transparent-btn {
+        background-color: transparent;
+        color: $green-color;
+        border: 1px solid $green-color;
+        &:hover {
+            background-color: $green-color;
+            color: $white-color;
+        }
+    }
+}
+
+.add-to-cart-btn {
+    background-color: #CF2683;
+    height: 40px;
+    color: $white-color;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 2px 10px;
+    border: 1px solid #CF2683;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    position: relative;
+    img {
+        margin-left: 13px;
+        max-width: 18px;
+    }
+    &:hover {
+        background-color: $white-color;
+        color: #CF2683;
+        img {
+            opacity: 0;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 18px;
+            height: 18px;
+            background: url('../images/icons/cart-pink.svg') no-repeat center center;
+            background-size: cover;
+        }
+    }
+    &.customize-btn {
+        &:hover {
+            color: $white-color;
+            background-color: #CF2683;
+            &:after {
+                background: none;
+            }
+            img {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+// Buttons To Slide Filter
+.btns-filter-container {
+    margin-top: 25px;
+    display: none;
+    @media #{$mobile} {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .listing-btn {
+        border-radius: 10px;
+        box-shadow: 0 0 5px -3px #000000;
+    }
+}

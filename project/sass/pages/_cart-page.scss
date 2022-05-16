@@ -1,0 +1,174 @@
+.cart-page {
+    margin-top: 20px;
+    .cart-list-detail {
+        @media #{$ipadPro} {
+            width: 65%;
+        }
+        .cart-list-container {
+            margin: 0;
+            max-width: 80%;
+            @media #{$mobile} {
+                max-width: 100%;
+            }
+            .cart-list-item {
+                display: flex;
+                @media #{$maxSmallMobile} {
+                    flex-direction: column;
+                }
+                padding-top: 35px;
+                padding-bottom: 30px;
+                border-bottom: 1px solid rgba(#707070, .2);
+                position: relative;
+                .btn-close-cart {
+                    position: absolute;
+                    top: 35px;
+                    right: 0;
+                    background-color: $green-color;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    border: none;
+                    img {
+                        max-width: 10px;
+                    }
+                }
+                .cart-list-img {
+                    margin-right: 40px;
+                    @media #{$maxSmallMobile} {
+                        margin-right: 0;
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                    img {
+                        max-width: 160px;
+                        object-fit: cover;
+                        height: 160px;
+                        border: 1px solid $green-color;
+                    }
+                }
+                .cart-list-desc {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    @media #{$maxSmallMobile} {
+                        text-align: center;
+                    }
+                    > div {
+                        width: 100%;
+                        .h-cart, .dimesnions {
+                            font-size: 17px;
+                            font-weight: 600;
+                            margin-bottom: 20px;
+                            span {
+                                font-weight: normal;
+                            }
+                        }
+                        div {
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: space-between;
+                            .product-num {
+                                align-items: center;
+                            }
+                            .price {
+                                font-weight: bold;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btn-clear {
+            background-color: $white-color;
+            border: 1px solid $green-color;
+            color: $green-color;
+            width: 150px;
+            height: 50px;
+            margin-top: 30px;
+            transition: .3s;
+            border-radius: 3px;
+            &:hover {
+                background-color: $green-color;
+                color: $white-color;
+
+            }
+        }
+    }
+}
+/* START :: Modal Sign in and up style */
+.modal-page {
+    .modal-dialog {
+        .modal-content {
+            .modal-header {
+                margin-top: 30px;
+                .modal-title {
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+            }
+            .modal-body {
+                margin-top: 0;
+                padding-top: 0;
+                .modal-btns {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .sign-btns {
+                        border-radius: 0;
+                        margin-right: 2px;
+                        box-shadow: none;
+                        border: none;
+                        margin-bottom: 30px;
+                        &:hover {
+                            background-color: $green-color;
+                            color: $white-color;
+                            border: none;
+                        }
+                        &:last-of-type {
+                            margin-right: 0;
+                        }
+                        &:not(.active) {
+                            background-color: #EDF7F2;
+                            color: $green-color;
+                        }
+                    }
+                }
+                .sign-form {
+                    label {
+                        font-size: 12px;
+                    }
+                    .remember-me {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    .forgot-pass {
+                        color: #181818;
+                        font-size: 14px;
+                    }
+                    .span-or {
+                        margin-right: 15px;
+                        margin-left: 15px;
+                        font-weight: 600;
+                        font-size: 18px;
+                        color: #181818;
+                    }
+                    .continue-guest {
+                        height: 40px;
+                        width: 210px;
+                        border-radius: 3px;
+                        color: $green-color;
+                        font-weight: 600;
+                        background-color: $white-color;
+                        border: 1px solid $green-color;
+                        @media #{$maxSmallMobile} {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* END :: Modal Sign in and up style */

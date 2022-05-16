@@ -1,0 +1,66 @@
+// User Menu
+@import "../sections/user-account/user-menu";
+
+// User Panel
+@import "../sections/user-account/user-panel";
+
+// User Invoice
+@import "../sections/user-account/invoice";
+
+.add-new-address-btn {
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    img {
+        margin-left: 8px;
+        max-height: 22px;
+    }
+}
+
+.address-popup {
+    .modal-address-title {
+        font: {
+            size: 23px;
+            weight: bold
+        }
+        margin-bottom: 25px;
+        color: $default-text-color;
+        @media #{$mobile} {
+            font-size: 19px;
+            margin-bottom: 18px;
+        }
+    }
+    .form-group {
+        width: 100%;
+        // padding: 0 20px;
+    }
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px 15px;
+    }
+    .submit-btn {
+        text-align: left;
+        width: 100%;
+        > button {
+            width: auto;
+            &:first-of-type {
+                @media #{$maxSmallMobile} {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+.main-account-form {
+    width: 450px;
+    @media #{$mobile} {
+        width: 100%;
+    }
+    .main-btn {
+        width: auto;
+        padding: 0 20px;
+        font-size: 13px;
+    }
+}

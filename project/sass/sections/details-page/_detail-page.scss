@@ -1,0 +1,162 @@
+.product-details {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    .images-modal-container {
+        display: flex;
+        max-height: 390px;
+        @media #{$mobile} {
+            margin-bottom: 30px;
+        }
+        @media #{$maxSmallMobile} {
+            height: auto;
+            max-height: none;
+            flex-direction: column-reverse;
+        }
+        @media #{$ipadPro} {
+            width: 46.666667%;
+        }
+        .modal-left-img {
+            max-width: 90px;
+            margin-right: 15px;
+            @media #{$maxSmallMobile} {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                max-width: none;
+                margin-top: 4px;
+            }
+            img {
+                max-width: 100%;
+                height: 90px;
+                object-fit: cover;
+                margin-bottom: 10px;
+                border: 1px solid $green-color;
+                cursor: pointer;
+                @media #{$maxSmallMobile} {
+                    margin-bottom: 0;
+                    width: 85px;
+                }
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .modal-right-img {
+            max-height: 390px;
+            width: calc(100% - 140px);
+            position: relative;
+            overflow: hidden;
+            @media #{$ipadPro} {
+                width: calc(100% - 100px);
+            }
+            @media #{$maxSmallMobile} {
+                width: 100%;
+            }
+            .sale {
+                top: 15px;
+            }
+            img {
+                width: 100%;
+                object-fit: cover;
+                border: 1px solid $green-color;
+                height: 100%;
+            }
+        }
+    }
+    .product-review {
+        padding-left: 0;
+        margin-bottom: 0;
+        @media #{$maxSmallMobile} {
+            padding-left: calc(var(--bs-gutter-x) * .5);
+        }
+        @media #{$ipadPro} {
+            width: 53.333333%;
+            padding-left: 20px;
+        }
+        .modal-info {
+            padding-left: 0;
+            @media #{$maxSmallMobile} {
+                padding-right: 0;
+            }
+            .info-title {
+                margin-top: 0;
+                .title-product {
+                    margin-bottom: 20px;
+                }
+                .rate-product {
+                    background: none;
+                    color: $green-color;
+                    font-size: 15px;
+                    font-weight: 600;
+                    border: none;
+                    padding: 0;
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+                .rate-you-content {
+                    text-align: right;
+                    .rate-you  {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .product-desc {
+                margin-bottom: 30px;
+                margin-top: 30px;
+            }
+            .product-num {
+                margin-bottom: 0;
+                display: flex;
+                align-items: center;
+                margin-top: 15px;
+                // Select2
+                .select2,
+                .select2-container,
+                .select2-container--default {
+                    width: 190px !important;
+                    margin-right: 20px;
+                    .select2-selection,
+                    .select2-selection--single {
+                        width: 100%;
+                        border-radius: 3px;
+                    }
+                }
+            }
+            .d-error {
+                color: #E31720;
+                font-size: 12px;
+                margin-top: 15px;
+            }
+            .price-product {
+                margin-bottom: 30px;
+            }
+            .btns-product {
+                flex-wrap: wrap;
+                .edit-btn {
+                    width: 80px;
+                    i {
+                        margin-left: 5px;
+                    }
+                }
+                .add-to-cart-btn {
+                    &.out-of-stock {
+                        background-color: #C7CAC8;
+                        border: 1px solid #C7CAC8;
+                        padding: 2px 30px;
+                        img {
+                            display: none;
+                        }
+                        &:hover {
+                            color: $white-color;
+                            &:after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

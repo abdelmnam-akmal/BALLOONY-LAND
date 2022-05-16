@@ -1,0 +1,111 @@
+.homepage-slider {
+    margin-top: -100px;
+    height: calc(100vh - 50px);
+    counter-reset: section;
+    @media #{$mobile} {
+        margin-top: -70px;
+        height: calc(100vh - 23px);
+    }
+    .carousel-item {
+        > img {
+            width: 100%;
+            height: calc(100vh - 50px);
+            object-fit: cover;
+            @media #{$mobile} {
+                height: calc(100vh - 23px);
+            }
+        }
+    }
+    .carousel-caption {
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        // top: calc(50% + 100px);
+        // transform: translateY(calc(-50% - 50px));
+        bottom: auto;
+        text-align: left;
+        @media #{$mobile} {
+            display: block !important;
+        }
+        h1 {
+            font: {
+                size: 47px;
+                weight: normal;
+            };
+            line-height: 60px;
+            color: #2A2929;
+            margin-bottom: 35px;
+            @media #{$mobile} {
+                font-size: 22px;
+                line-height: 28px;
+                padding-right: 20px;
+                margin-bottom: 10px;
+            }
+        }
+        p {
+            font: {
+                size: 18px;
+                weight: normal;
+            };
+            line-height: 24px;
+            color: #2A2929;
+            margin-bottom: 0;
+            width: 620px;
+            @media #{$mobile} {
+                width: auto;
+                padding-right: 20px;  
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
+    }
+    .carousel-indicators {
+        right: 0;
+        left: auto;
+        bottom: auto;
+        margin: 0;
+        top: 50vh;
+        transform: translateY(-50%);
+        flex-direction: column;
+        button {
+            width: 3px;
+            height: 40px;
+            margin: 0 20px !important;
+            background-clip: initial;
+            background-color: #2A2929;
+            text-indent: initial;
+            position: relative;
+            &::before {
+                counter-increment: section;
+                content: "0" counter(section);
+                font: {
+                    size: 20px;
+                    weight: 600
+                };
+                line-height: 13px;
+                color: #2A2929;
+                display: block;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                opacity: 1 !important;
+            }
+            &:first-child {
+                &::before {
+                    top: -40px;
+                }
+            }
+            &:last-child {
+                &::before {
+                    bottom: -40px;
+                }
+            }
+            &:not(:last-child):not(:first-child) {
+                &::before {
+                    visibility:  hidden;
+                }
+            }
+        }
+    }
+}

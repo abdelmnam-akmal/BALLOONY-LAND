@@ -1,0 +1,78 @@
+.user-panel {
+    flex: 0 0 calc(100% - 300px);
+    max-width: calc(100% - 300px);
+    @media #{$mobile} {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .nav-tabs {
+        border: none;
+    }
+    .nav-link {
+        height: 45px;
+        width: 180px;
+        border-radius: 0;
+        background-color: $light-green-color;
+        color: $green-color;
+        box-shadow: none;
+        border: none;
+        margin: 0 7px;
+        @media #{$mobile} {
+            width: 120px;
+            height: 35px;
+            line-height: 21px;
+            font-size: 13px;
+        }
+        &:hover,
+        &.active {
+            background-color: $green-color;
+            color: $white-color;
+        }
+    }
+    .tab-content {
+        .row {
+            > div {
+                @media #{$ipadPro} {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+}
+.user-panel__title-and-logout {
+    margin-bottom: 23px;
+    > h1 {
+        font: {
+            size: 30px;
+            weight: normal;
+        };
+        line-height: 32px;
+        @media #{$mobile} {
+            font-size: 20px;
+            line-height: 24px;
+            margin: 0;
+        }
+    }   
+    a {
+        border-radius: 3px;
+        border: 1px solid $green-color;
+        width: 100px;
+        height: 40px;
+        display: inline-block;
+        font-size: 13px;
+        line-height: 20px;
+        text-align: center;
+        line-height: 39px;
+        color: $green-color;
+        transition: all 0.3s ease-in-out;
+        @media #{$mobile} {
+            height: 33px;
+            line-height: 33px;
+        }
+        &:hover {
+            background-color: $green-color;
+            color: $white-color;
+        }
+    }
+}

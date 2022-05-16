@@ -1,0 +1,57 @@
+.customize-ur-package {
+    background: url('../images/global/customize-ur-package-bg.png') no-repeat center center;
+    background-size: cover;
+    padding: 80px 0;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 60px;
+    @media #{$mobile} {
+        padding: 34px 0;
+        margin-bottom: 30px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: $white-color, $alpha: 0.8);
+        z-index: -1;
+    }
+}
+.customize-ur-package__title {
+    font-size: 35px;
+    color: #2A2929;
+    margin-bottom: 20px;
+    line-height: 44px;
+    @media #{$mobile} {
+        text-align: center;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    @media #{$ipadPro} {
+        font-size: 27px;
+    }
+}
+.customize-ur-package__start-now,
+.customize-ur-package__title {
+    text-align: right;
+    @media #{$mobile} {
+        text-align: center;
+    }
+}
+.customize-ur-package__desc {
+    margin: 0;
+    font-size: 16px;
+    padding-left: 130px;
+    color: $default-text-color;
+    @media #{$mobile} {
+        padding: 0 15px !important;
+        text-align: center;
+        margin-top: 20px;
+    }
+    @media #{$ipadPro} {
+        padding-left: 65px;
+    }
+}

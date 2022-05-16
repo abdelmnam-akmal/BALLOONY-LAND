@@ -1,0 +1,324 @@
+.nav-bundle {
+    background: url('../images/global/bg-navbar.svg') no-repeat center center;
+    background-size: cover; 
+}
+
+.bundle-customize {
+    .header-bundle {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        @media #{$mobile} {
+            padding: 30px 0;
+        }
+        .title-bundle {
+            font-weight: 600;
+            color: #231F20;
+            margin-bottom: 5px;
+            @media #{$mobile} {
+                font-size: 20px;
+            }
+        }
+        .price-bundle {
+            color: #CF2683;
+            font: {
+                size: 19px;
+                weight: bold;
+            };
+            @media #{$mobile} {
+                font-size: 17px;
+            }
+        }
+    }
+
+    .container-fluid {
+        padding: 0;
+    }
+    .bundle-customize__wrapper {
+        background-color: rgba($color: $light-green-color, $alpha: 0.7);
+    }
+    .invoice-steps {
+        padding: 50px;
+        margin-bottom: 30px;
+        @media #{$mobile} {
+            padding: 35px;
+            margin-bottom: 5px;
+            max-width: 350px;
+            margin: auto;
+        }
+    }
+
+    .invoice-step {
+        &:not(:last-child) {
+            .invoice-step__point {
+                &::after {
+                    content: "";
+                    height: 1px;
+                    width: 370px;
+                    background-color: #A09D9D;
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 30px;
+                    transform: translateY(-50%);
+                    @media #{$mobile} {
+                        width: 150px;
+                    }
+                    @media #{$mobile} {
+                        width: 55px;
+                    }
+                    @media #{$ipadPro} {
+                        width: 240px;
+                    }
+                }
+            }
+        }
+        &.active {
+            .invoice-step__point {
+                box-shadow: 0 0px 0px 8px rgba($color: $green-color, $alpha: 0.4);
+                &::before {
+                    content: "";
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 50%;
+                    background-color: $green-color;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            } 
+        }
+    }
+
+    .invoice-step__point {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid #A09D9D;
+        background-color: #F4F5F7;
+        margin: 0 auto 30px;
+        @media #{$mobile} {
+            margin-bottom: 17px;
+        }
+    }
+
+    .invoice-step__title {
+        font-size: 18px;
+        line-height: 27px;
+        color: #181818;
+        margin-bottom: 0;
+        @media #{$mobile} {
+            font-size: 10px;
+            line-height: 16px;
+        }
+    }
+
+    .bundle-img, .bundle-content {
+        padding-top: 30px;
+        padding-bottom: 70px;
+        @media #{$mobile} {
+            padding-bottom: 30px;
+        }
+    }
+
+    .bundle-img {
+        @media #{$ipadPro} {
+            width: 45.666667%;
+        }
+        > div {
+            border: 1px solid $green-color;
+            @media #{$mobile} {
+                text-align: center;
+            }
+            img {
+                max-width: 530px;
+                height: 470px;
+                object-fit: cover;
+                @media #{$mobile} {
+                    max-width: 100%;
+                    height: 390px;
+                    width: 100%;
+                }
+                @media #{$ipadPro} {
+                    max-width: 100%;
+                    height: 370px;
+                }
+            }
+        }
+    }
+
+    .bundle-content {
+        display: flex;
+        align-items: center;
+        @media #{$ipadPro} {
+            width: 54.333333%;
+        }
+        > div {
+            padding-left: 30px;
+            @media #{$mobile} {
+                padding-left: 0;
+            }
+            .t-content {
+                margin-bottom: 30px;
+                color: #231F20;
+                @media #{$mobile} {
+                    margin-bottom: 8px;
+                }
+            }
+            p {
+                color: #181818;
+                font-size: 15px;
+                margin-bottom: 40px;
+            }
+            .dimesnions {
+                font-weight: 600;
+                color: #181818;
+                margin-bottom: 20px;
+            }
+            .product-num {
+                margin-bottom: 0;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                // Select2
+                .select2,
+                .select2-container,
+                .select2-container--default {
+                    width: 190px !important;
+                    margin-right: 20px;
+                    @media #{$mobile} {
+                        width: 150px !important;
+                    }
+                    @media #{$mobile} {
+                        margin-bottom: 10px;
+                    }
+                    @media #{$ipadPro} {
+                        margin-bottom: 10px;
+                    }
+                    .select2-selection,
+                    .select2-selection--single {
+                        width: 100%;
+                        border-radius: 3px;
+                    }
+                }
+                .add-select {
+                    background-color: #EDF7F2;
+                    border-radius: 3px;
+                    border: 1px dashed #707070;
+                    width: 100px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #707070;
+                    i {
+                        font-size: 18px;
+                    }
+                }
+            }
+            .letters-list {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                .letters-item {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 3px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0px 0px 35px #0000001A;
+                    margin-right: 30px;
+                    position: relative;
+                    @media #{$mobile} {
+                        margin-bottom: 10px;
+                    }
+                    @media #{$ipadPro} {
+                        margin-bottom: 10px;
+                    }
+                    @media #{$mobile} {
+                        width: 55px;
+                        height: 55px;
+                    }
+                    .remove-icon {
+                        position: absolute;
+                        top: -12px;
+                        right: -23px;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                        background-color: #DB565A;
+                        border: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        i {
+                            color: $white-color;
+                        }
+                    }
+                    img {
+                        object-fit: cover;
+                        max-width: 40px;
+                        height: 50px;
+                    }
+                }
+            }
+            .btns-product {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 30px;
+                @media #{$mobile} {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                .veiw-details-btn {
+                    width: 185px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        margin-left: 10px;
+                    }
+                    &:hover {
+                        img {
+                            background-color: $green-color;
+                            padding: 1px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                div {
+                    display: flex;
+                    align-items: center;
+                    @media #{$mobile} {
+                        margin-top: 30px;
+                        width: 100%;
+                        justify-content: center;
+                    }
+                    button {
+                        width: 100px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        border: 1px solid #CF2683;
+                        border-radius: 3px;
+                        &.chevron-left {
+                            background-color: $white-color;
+                            color: #CF2683;
+                            margin-right: 10px;
+                        }
+                        &.chevron-right {
+                            background-color: #CF2683;
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

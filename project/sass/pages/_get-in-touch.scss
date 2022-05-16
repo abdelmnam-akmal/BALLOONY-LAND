@@ -1,0 +1,108 @@
+.get-in-touch {
+    @media #{$mobile} {
+        .row {
+            &:nth-of-type(2) {
+                > div {
+                    &:first-child {
+                        order: 2;
+                    }
+                    &:nth-child(2) {
+                        order: 1;
+                    }
+                }
+            }
+        }
+    }
+    .main-title {
+        margin: 90px 0;
+        @media #{$mobile} {
+            margin: 50px 0 75px;
+        }
+    }
+}
+.contact-info {
+    margin-bottom: 120px;
+    @media #{$mobile} {
+        margin-bottom: 40px;
+    }
+}
+.contact-info__icon {
+    margin-bottom: 40px;
+    @media #{$mobile} {
+        margin-bottom: 20px;
+    }
+    img {
+        width: 60px;
+        height: 60px;
+        @media #{$mobile} {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+.contact-info__label {
+    border-radius: 3px;
+    width: 350px;
+    border: 1px solid $light-green-color;
+    padding: 0 22px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+    @media #{$mobile} {
+        min-height: 25px;
+        width: auto;
+        border: none;
+    }
+    @media #{$ipadPro} {
+        width: 100%;
+    }
+    a {
+        color: #8DCFAD;
+        font-size: 17px;
+        line-height: 23px;
+        @media #{$mobile} {
+            font-size: 13px;
+            line-height: 16px;
+        }
+    }
+}
+.get-in-touch-form {
+    margin-right: 70px;
+    @media #{$mobile} {
+        margin: 0 !important;
+    }
+    .form-group {
+        input, select, textarea {
+            padding-left: 15px !important;
+            padding-right: 15px;
+            border-color: $light-green-color;
+        }
+        .select2-selection {
+            width: 100%;
+            box-shadow: 0 4px 4px -5px #ccc;
+            border: 1px solid transparent;
+            color: #757575;
+            transition: all 0.5s;
+            font-size: 15px;
+            border-radius: 3px;   
+            background-color: #F8FCFA;
+        }
+    }
+}
+.get-in-touch__map {
+    @media #{$mobile} {
+        margin-bottom: 40px;
+    }
+    iframe {
+        height: 370px;
+        @media #{$mobile} {
+            height: 369px;
+            width: 100%;
+        }
+        @media #{$ipadPro} {
+            width: 100%
+        }
+    }
+}

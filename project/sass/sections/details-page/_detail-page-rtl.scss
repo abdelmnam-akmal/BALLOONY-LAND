@@ -1,0 +1,76 @@
+.product-details {
+    .images-modal-container {
+        .modal-left-img {
+            margin-right: 0;
+            margin-left: 15px;
+        }
+    }
+    .product-review {
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        padding-right: 0;
+        @media #{$maxSmallMobile} {
+            padding-right: calc(var(--bs-gutter-x) * .5);
+        }
+        @media #{$ipadPro} {
+            padding-left: 0;
+            padding-right: 20px;
+        }
+        .modal-info {
+            padding-left: 25px;
+            padding-right: 0;
+            @media #{$maxSmallMobile} {
+                padding-left: 0;
+            }
+            .info-title {
+                .rate-you-content {
+                    text-align: left;
+                    .review {
+                        padding-left: 10px;
+                    }
+                }
+            }
+            .product-num {
+                // Select2
+                .select2,
+                .select2-container,
+                .select2-container--default {
+                    margin-right: 0;
+                    margin-left: 20px;
+                }
+            }
+            .btns-product {
+                button {
+                    margin-right: 0;
+                    margin-left: 10px;
+                    .edit-btn {
+                        i {
+                            margin-right: 5px;
+                            margin-left: 0;
+                        }
+                    }
+                    &.add-to-cart-btn {
+                        img {
+                            margin-right: 13px;
+                            margin-left: 0;
+                        }
+                        &:hover {
+                            &:after {
+                                left: 10px;
+                                right: auto;
+                            }
+                        }
+                    }
+                    &.favorite-btn {
+                        img {
+                            margin-right: 20px;
+                            margin-left: 0;
+                        }
+                    }
+                    &.share-btn {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.invoice-step {
+    &:not(:last-child) {
+        .invoice-step__point {
+            &::after {
+                left: auto;
+                right: 30px;
+            }
+        }       
+    }
+}

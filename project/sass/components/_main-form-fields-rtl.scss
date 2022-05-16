@@ -1,0 +1,28 @@
+.form-group {
+    img {
+        left: auto;
+        right: 12px;
+    }
+    .main-input {
+        padding-left: 0;
+        padding-right: 40px;
+        text-align: right;
+    }
+    // Checkbox
+    .main-checkbox {
+        + label {
+            &:before {
+                margin-right: 0;
+                margin-left: 15px;
+            }
+        }
+        &:checked {
+            + label {
+                &::after {
+                    left: auto;
+                    right: 7px;
+                }
+            }
+        }
+    }
+}

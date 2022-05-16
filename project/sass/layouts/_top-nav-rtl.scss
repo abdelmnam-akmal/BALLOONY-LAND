@@ -1,0 +1,50 @@
+.top-nav-icons__main-icons {
+    margin-right: 0;
+    margin-left: 74px;
+    @media #{$mobile} {
+        margin-left: 45px;
+    }
+    &::after {
+        right: auto;
+        left: -37px;
+        @media #{$mobile} {
+            left: -26px;
+        }
+    }
+    a {
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-left: 30.5px;
+            @media #{$mobile} {
+                margin-left: 20px;
+            }
+        }
+        .cart-count {
+            right: auto;
+            left: -15px;
+            @media #{$mobile} {
+                top: 0px;
+                right: -6px;
+            }
+        }
+    }
+}
+.top-nav-icons__dropdown-icons {
+    .dropdown {
+        &:not(:last-child) {
+            margin-right: 0;
+            margin-left: 20px;
+        }
+    }
+    .dropdown-menu {
+        border-left: none;
+        border-right: 3px solid $green-color;
+        text-align: right;
+    }
+    .dropdown-toggle {
+        &::after {
+            margin-left: 0;
+            margin-right: 0.255em;
+        }
+    }
+}

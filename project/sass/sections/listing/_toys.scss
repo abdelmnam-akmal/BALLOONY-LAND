@@ -1,0 +1,157 @@
+::-webkit-scrollbar {
+    width: 7px;
+    display: none;
+}
+
+.listing {
+    margin-top: 43px;
+    @media #{$mobile} {
+        margin-top: 10px;
+    }
+
+    .main-content {
+        @media #{$maxSmall} {
+            flex-direction: column;
+        }
+    }
+
+    .toys {
+        width: calc(100% - 340px);
+        @media #{$maxSmall} {
+            width: 100%;
+        }
+        .list-toys {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            @media #{$ipadPro} {
+                overflow: auto;
+            }
+            @media #{$maxSmall} {
+                overflow: auto;
+            }
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                a {
+                    width: 190.65px;
+                    height: 60.28px;
+                    overflow: hidden;
+                    position: relative;
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #EDF7F2;
+                    color: $default-text-color;
+                    font-weight: 600;
+                    @media #{$mobile} {
+                        text-align: center;
+                        width: 140px;
+                        border-radius: 10px;
+                        margin-right: 10px;
+                    }
+                    @media #{$ipadPro} {
+                        margin-right: 10px;
+                    }
+                    &.active {
+                        background-color: $green-color;
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+
+        .result-showing {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 40px;
+            @media #{$maxSmallMobile} {
+                flex-direction: column;
+            }
+            .result-span {
+                font-size: 18px;
+                color: $default-text-color;
+                @media #{$mobile} {
+                    margin-bottom: 15px;
+                }
+                q {
+                    font-weight: bold;
+                }
+            }
+            .form-select {
+                width: 245px;
+                border: 1px solid rgba($default-text-color, .2);
+                opacity: 69%;
+                font-size: 14px;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            .select2,
+            .select2-container,
+            .select2-container--default {
+                .select2-selection,
+                .select2-selection--single {
+                    @media (max-width: 1025px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .cards-listing {
+            .card {
+                @media #{$maxSmallMobile} {
+                    flex: 0 0 calc(50% - 5px);
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    border-radius: 10px;
+                }
+                @media #{$mobile} {
+                    max-width: 340px;
+                }
+                .card-img-top {
+                    @media #{$maxSmallMobile} {
+                        border-radius: 10px;
+                        height: 206px;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .card-body {
+                    .heart {
+                        @media #{$maxSmallMobile} {
+                            bottom: 50px;
+                            top: auto;
+                        }
+                    }
+                    .card-text {
+                        @media #{$mobile} {
+                            padding-right: 0;
+                            padding-left: 0;
+                        }
+                    }
+                    > div {
+                        @media #{$maxSmallMobile} {
+                            flex-direction: column;
+                            align-items: flex-start !important;
+                        }
+                        button {
+                            @media #{$maxSmallMobile} {
+                                margin-top: 10px;
+                                font-size: 12px;
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

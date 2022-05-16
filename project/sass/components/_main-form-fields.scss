@@ -1,0 +1,98 @@
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+    img {
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        max-height: 16px;
+    }
+}
+// Main Input
+.main-input,
+.main-select,
+.main-textarea {
+    height: 40px;
+    width: 100%;
+    box-shadow: 0 4px 4px -5px #ccc;
+    border: 1px solid transparent;
+    color: #757575;
+    transition: all 0.5s;
+    font-size: 15px;
+    border-radius: 3px;   
+    background-color: #F8FCFA;
+    &:focus,
+    &:active,
+    &:focus-visible,
+    &:hover {
+        border-color: $green-color;
+        box-shadow: none;
+        outline: 0;
+    }
+}
+.main-input {
+    padding-left: 40px;
+}
+// Main Textarea
+.main-textarea {
+    min-height: 120px;
+    padding: 15px;
+}
+// Checkbox
+.main-checkbox {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+    + label {
+        position: relative;
+        font-size: 14px;
+        color: #181818;
+        cursor: pointer;
+        @media #{$mobile} {
+            font-size: 13px;
+            display: flex;
+            align-items: flex-start;
+        }
+        &:before {
+            content:'';
+            -webkit-appearance: none;
+            background-color: transparent;
+            border: 2px solid $green-color;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+            padding: 8px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-right: 15px;
+        }
+    }
+    &:checked {
+        + label {
+            &::before {
+                background-color: $green-color;
+            }
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 3px;
+                left: 7px;
+                width: 6px;
+                height: 14px;
+                border: solid $white-color;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+// Placeholder
+::placeholder {
+    color: #757575;
+    font-size: 15px;
+}

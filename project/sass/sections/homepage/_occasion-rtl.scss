@@ -1,0 +1,14 @@
+.occasion-card {
+    .occasion-card__title {
+        padding-left: 0;
+        padding-right: 50px;
+        @media #{$mobile} {
+            padding-left: 0;
+            padding-right: 19px;
+        }
+        @media #{$ipadPro} {
+            padding-left: 0;
+            padding-right: 25px;
+        }
+    }
+}

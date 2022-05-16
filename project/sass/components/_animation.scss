@@ -1,0 +1,19 @@
+// Filter Visible
+@keyframes FilterInserted {
+    from {
+        height: 0;
+    }
+    to {
+        height: 436px;
+    }
+}
+
+// Filter Hidden
+@keyframes FilterHidden {
+    from {
+        height: 436px;
+    }
+    to {
+        height: 0;
+    }
+}

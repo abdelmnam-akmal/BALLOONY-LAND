@@ -1,0 +1,51 @@
+.bundle-customize {
+
+    .invoice-step {
+        &:not(:last-child) {
+            .invoice-step__point {
+                &::after {
+                    left: auto;
+                    right: 30px;
+                }
+            }       
+        }
+    }
+    .bundle-content {
+        > div {
+            padding-left: 0;
+            padding-right: 30px;
+            @media #{$mobile} {
+                padding-right: 0;
+            }
+            .product-num {
+                // Select2
+                .select2,
+                .select2-container,
+                .select2-container--default {
+                    margin-right: 0;
+                    margin-left: 20px;
+                }
+            }
+            .letters-list {
+                .letters-item {
+                    margin-right: 0;
+                    margin-left: 30px;
+                    .remove-icon {
+                        right: auto;
+                        left: -23px;
+                    }
+                }
+            }
+            .btns-product {
+                .veiw-details-btn {
+                    width: 165px;
+                    img {
+                        margin-left: 0;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+}

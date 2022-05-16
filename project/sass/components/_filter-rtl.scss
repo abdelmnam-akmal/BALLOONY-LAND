@@ -1,0 +1,15 @@
+.filter-flush {
+    .accordion-item {
+        .accordion-header {
+            .accordion-button {
+                &:after {
+                    margin-right: auto;
+                    margin-left: 0;
+                }
+            }
+        }
+        .d-range {
+            text-align: left;
+        }
+    }
+}

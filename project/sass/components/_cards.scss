@@ -1,0 +1,151 @@
+.card {
+    max-width: 317px;
+    max-height: 445px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: $off-white-color;
+    padding: 15px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0;
+    @media #{$mobile} {
+        max-width: 90%;
+        margin: auto;
+    }
+    @media #{$ipadPro} {
+        max-width: 290px;
+    }
+    .card-img-top {
+        object-fit: cover;
+        max-width: 287px;
+        height: 250px;
+        @media #{$mobile} {
+            max-width: 100%;
+        }
+    }
+    .card-body {
+        padding: 0;
+        position: relative;
+        .heart {
+            color: $default-text-color;
+            opacity: .2;
+            font-size: 25px;
+            position: absolute;
+            top: 13px;
+            right: 3px;
+            cursor: pointer;
+            transition: .2s;
+            &.active {
+                color: #E31720;
+                opacity: 1;
+            }
+        }
+        .product-title {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            margin-top: 15px;
+            display: block;
+        }
+        .card-text {
+            font-size: 14px;
+            padding-right: 55px;
+            color: #2A2B2C;
+            margin-bottom: 15px;
+        }
+        .starting {
+            font-size: 13px;
+        }
+        div {
+            .card-disc {
+                text-decoration: line-through;
+                color: #7E7F80;
+                font-size: 14px;
+                text-decoration-color: #E31720;
+            }
+            .card-price {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// Order Card
+.order-card {
+    background-color: $light-green-color;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px #00000014;
+    padding: 17px;
+    margin-top: 30px;
+    height: calc(100% - 30px);
+    transition: all 0.3s ease-in-out;
+    @media #{$mobile} {
+        margin-top: 20px;
+    }
+    &:hover {
+        box-shadow: none;
+    }
+    > div {
+        &:not(:last-child) {
+            margin-bottom: 35px;
+        }
+    }
+    .order-card__detialed {
+        font-size: 11px;
+        line-height: 18px;
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+        span {
+            display: block;
+        }
+        .main-btn {
+            width: 90%;
+            font-size: 12px;
+            height: 32px;
+            margin-top: 2px;
+        }
+    }
+}
+
+// Address Card
+.address-card {
+    background-color: $light-green-color;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px #00000014;
+    padding: 17px;
+    position: relative;
+    margin-bottom: 30px;
+    height: calc(100% - 30px);
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        box-shadow: none;
+    }
+    .address-card__title {
+        color: #181818;
+        padding-right: 70px;
+        font: {
+            size: 16px;
+            weight: bold;
+        };
+        margin-bottom: 5px;
+    }
+    .address-card__content {
+        p {
+            margin: 0;
+            font-size: 14px;
+            color: #181818;
+        }
+    }
+    .address-card__actions {
+        position: absolute;
+        top: 13px;
+        right: 13px;
+        > button {
+            background: none;
+            border: none;
+            img {
+                max-height: 20px;
+            }
+        }
+    }
+}

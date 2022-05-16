@@ -1,0 +1,119 @@
+.top-nav {
+    background-color: $green-color;
+    height: 50px;
+    padding: 14.5px 0;
+    @media #{$mobile} {
+        height: 30px;
+        padding: 5px 0;
+        position: relative;
+        z-index: 99;
+    }
+}
+.top-nav-icons__main-icons {
+    margin-right: 74px;
+    margin-top: -1px;
+    position: relative;
+    @media #{$mobile} {
+        margin-right: 45px;
+    }
+    &::after {
+        content: "|";
+        display: inline-flex;
+        position: absolute;
+        right: -37px;
+        @media #{$mobile} {
+            right: -26px;
+        }
+    }
+    a {
+        display: inline-block;
+        position: relative;
+        &:not(:last-child) {
+            margin-right: 30.5px;
+            @media #{$mobile} {
+                margin-right: 20px;
+            }
+        }
+        .cart-count {
+            position: absolute;
+            top: -9px;
+            right: -15px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            color: $white-color;
+            background-color: $move-color;
+            font-size: 13px;
+            font-weight: bold;
+            line-height: 24px;
+            text-align: center;
+            @media #{$mobile} {
+                font-size: 7px;
+                width: 13px;
+                height: 13px;
+                line-height: 13px;
+                top: 0px;
+                right: -6px;
+            }
+        }
+    }
+    img {
+        height: 18px;
+        width: auto;
+        @media #{$mobile} {
+            height: 13px;
+        }
+    }
+}
+.top-nav-icons__dropdown-icons {
+    .dropdown-toggle {
+        background: none;
+        border: none;
+        padding: 0;
+        color: $black-color;
+        display: flex;
+        align-items: center;
+        &:focus,
+        &:active {
+            outline: 0;
+            box-shadow: none;
+        }
+        img {
+            height: 18px;
+            width: auto;
+            @media #{$mobile} {
+                height: 13px;
+            }
+        }
+    }
+    .dropdown {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    .dropdown-menu {
+        border-left: 3px solid $green-color;
+        &.show {
+            transform: translate(0) !important;
+            top: 25px !important;
+            @media #{$mobile} {
+                padding: 5px 0;
+                top: 20px !important;
+                min-width: 8rem;
+            }
+        }
+        a {
+            @media #{$mobile} {
+                font-size: 12px;
+            }
+        }
+    }
+    li {
+        .dropdown-item {
+            &:hover {
+                background-color: $green-color;
+                color: $white-color;
+            }
+        }
+    }
+}

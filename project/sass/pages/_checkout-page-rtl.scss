@@ -1,0 +1,44 @@
+.checkout-page {
+    .checkout-content {
+        > div {
+            .checkout-address {
+                padding-right: 0;
+                li {
+                    margin-left: 25px;
+                    margin-right: 0;
+                    .main-checkbox {
+                        &:checked {
+                            + label {
+                                &::after {
+                                    left: auto;
+                                    right: 4px;
+                                }
+                            }
+                        }
+                    }
+                    address {
+                        padding-left: 0;
+                        padding-right: 35px;
+                    }
+                }
+            }
+            .btns-address {
+                .main-btn {
+                    padding-right: 45px;
+                    &:after {
+                        right: 0;
+                        margin-left: 0;
+                        margin-right: 15px;
+                    }
+                }
+                .return-to-cart {
+                    margin-right: 20px;
+                    margin-left: 0;
+                    @media #{$maxSmallMobile} {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

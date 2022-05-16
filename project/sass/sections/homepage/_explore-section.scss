@@ -1,0 +1,39 @@
+.explore-section {
+    background: url('../images/global/explore-more-bg.png') no-repeat center center;
+    background-color: cover;
+    padding: 98px 0;
+    position: relative;
+    z-index: 1;
+    margin: 75px 0;
+    @media #{$mobile} {
+        margin: 40px 0;
+        padding: 40px 0;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($color: $white-color, $alpha: 0.6);
+        z-index: -1;
+    }
+    .main-btn {
+        display: inline-block;
+        width: 165px;
+        line-height: 42px;
+        @media #{$mobile} {
+            line-height: 37px;
+        }
+    }
+}
+.explore-section__title {
+    font-size: 32px;
+    color: $default-text-color;
+    margin-bottom: 30px;
+    @media #{$mobile} {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+}

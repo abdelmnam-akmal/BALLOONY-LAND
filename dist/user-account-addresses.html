@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no"/>
+        <title>
+            My Account - Addresses
+        </title>
+
+        <!-- Bootstrap CSS -->
+        <link
+        rel="stylesheet" href="css/bootstrap.min.css"/>
+
+        <!-- Fontawesome 5 -->
+        <link
+        rel="stylesheet" href="css/fontawesome.min.css"/>
+
+        <!-- Select 2 -->
+        <link
+        rel="stylesheet" href="css/select2.min.css"/>
+
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Montserrat:wght@400;600;700;900&display=swap"/>
+
+        <!-- Related to Google Map -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script src="./js/google-map.js"></script>
+
+        <!-- Style file -->
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+
+    <body>
+
+        <!-- START :: Top Nav -->
+        <section class="top-nav">
+            <div class="container">
+                <div class="top-nav-icons d-flex justify-content-end align-items-center">
+                    <div class="top-nav-icons__main-icons">
+                        <a href="#">
+                            <img src="./images/icons/cart-icon.svg" alt="Cart" title="Cart"/>
+                            <span class="cart-count">
+                                01
+                            </span>
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/heart-icon.svg" alt="Favorite" title="Favorite"/>
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/search-icon.svg" alt="Search" title="Search"/>
+                        </a>
+                    </div>
+                    <!-- END :: Main Icons -->
+                    <div class="top-nav-icons__dropdown-icons d-flex">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./images/icons/user-icon.svg" alt="User" title="User"/>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li>
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./images/icons/language-icon.svg" alt="language" title="language"/>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <li>
+                                    <a class="dropdown-item" href="#">English</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Arabic</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END :: Dropdown Icons -->
+                </div>
+            </div>
+        </section>
+        <!-- END :: Top Nav -->
+
+        <!-- START :: Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/icons/logo.svg" alt="Balloony Land" title="Balloony Land"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">Balloons</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Toys</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Party Supplies</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Catering</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Occasions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Party</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Customize</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Track Order</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END :: Navbar -->
+
+        <!-- START :: breadcrumb -->
+        <section class="breadcrumb-content" aria-label="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item text-uppercase">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="breadcrumb-item text-uppercase active" aria-current="page">
+                        <a href="#">Profile</a>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <!-- END :: breadcrumb -->
+
+        <!-- START :: User Account -->
+        <section class="user-account">
+            <div
+                class="container d-flex">
+                <!-- START :: User Menu -->
+                <aside class="user-menu text-center">
+                    <div class="user-menu__info">
+                        <h3 class="h3 text-uppercase">
+                            Ahmed Azzar
+                        </h3>
+                        <p>
+                            username@gmail.com
+                        </p>
+                    </div>
+                    <ul class="user-menu__links list-unstyled">
+                        <li>
+                            <a href="#" class="text-uppercase">
+                                My Orders
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="active text-uppercase">
+                                My Addresses
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-uppercase">
+                                Edit Account
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-uppercase">
+                                Change Password
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+                <!-- END :: User Menu -->
+
+                <!-- START :: Panel Actions -->
+                <div class="user-panel">
+                    <div class="user-panel__title-and-logout text-uppercase d-flex align-items-start justify-content-between">
+                        <h1 class="h1">
+                            my
+                            <br/>
+                            <strong>
+                                Addresses
+                            </strong>
+                        </h1>
+                        <a href="#" class="user-logout">
+                            Logout
+                        </a>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="address-card">
+                                <h4 class="h4 address-card__title">
+                                    Address Name
+                                </h4>
+                                <div class="address-card__content">
+                                    <p>
+                                        Area : Hawally
+                                    </p>
+                                    <p>
+                                        Block: 3
+                                    </p>
+                                    <p>
+                                        Street:  103
+                                    </p>
+                                    <p>
+                                        Avenue:   Al-salmiya, near Rester Hotel
+                                    </p>
+                                    <p>
+                                        Building :   143
+                                    </p>
+                                    <p>
+                                        Phone number: 66733668
+                                    </p>
+                                </div>
+                                <div class="address-card__actions">
+                                    <button>
+                                        <img src="./images/icons/trash.svg"/>
+                                    </button>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#editNewAddress1">
+                                        <img src="./images/icons/edit-icon.svg"/>
+                                    </button>
+
+                                    <!-- START :: Edit Address modal -->
+                                    <div class="modal fade address-popup" id="editNewAddress1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header header-feedback">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="modal-info">
+                                                        <h2 class="h2 text-center text-uppercase modal-address-title">Edit ADD Address</h2>
+                                                        <form class="text-center">
+                                                            <div class="form-group">
+                                                                <input type="text" class="main-input" value="Belqass" placeholder="Address Name*"/>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <select class="main-select" value="Mansoura">
+                                                                    <option>
+                                                                        Area*
+                                                                    </option>
+                                                                    <option value="Cairo">
+                                                                        Cairo
+                                                                    </option>
+                                                                    <option value="Mansoura">
+                                                                        Mansoura
+                                                                    </option>
+                                                                    <option value="Damietta">
+                                                                        Damietta
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="text" class="main-input" placeholder="Block*"/>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="text" class="main-input" placeholder="Street*"/>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="text" class="main-input" placeholder="Building/House No.*"/>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="text" class="main-input" placeholder="Floor (Optional)"/>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <textarea class="main-textarea" rows="3" placeholder="Other Instructions"></textarea>
+                                                            </div>
+                                                            <div class="form-group submit-btn">
+                                                                <button type="button" class="btn main-btn transparent-btn text-uppercase" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#viewMap">
+                                                                    View Map
+                                                                </button>
+                                                                <button type="submit" class="btn main-btn text-uppercase">Add Address</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END :: Edit Address modal -->
+
+                                    <!-- START :: View Map -->
+                                    <div class="modal fade address-popup" id="viewMap" tabindex="-1" aria-labelledby="viewMapLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header header-feedback">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="modal-info">
+                                                        <h2 class="h2 text-center text-uppercase modal-address-title">Select your location</h2>
+                                                        <form class="text-center">
+                                                            <div class="form-group google-map-wrapper">
+                                                                <input id="pac-input" class="controls" type="text" placeholder="Search for location"/>
+                                                                <img src="./images/icons/my-location.svg" />
+                                                                <div id="map"></div>
+                                                            </div>
+                                                            <div class="form-group submit-btn">
+                                                                <button type="submit" class="btn main-btn text-uppercase">Confirm</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END :: View Map -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END :: Address Card -->
+                        <div class="col-12 col-lg-4">
+                            <div class="address-card">
+                                <h4 class="h4 address-card__title">
+                                    Address Name
+                                </h4>
+                                <div class="address-card__content">
+                                    <p>
+                                        Area : Hawally
+                                    </p>
+                                    <p>
+                                        Block: 3
+                                    </p>
+                                    <p>
+                                        Street:  103
+                                    </p>
+                                    <p>
+                                        Avenue:   Al-salmiya, near Rester Hotel
+                                    </p>
+                                    <p>
+                                        Building :   143
+                                    </p>
+                                    <p>
+                                        Phone number: 66733668
+                                    </p>
+                                </div>
+                                <div class="address-card__actions">
+                                    <button>
+                                        <img src="./images/icons/trash.svg"/>
+                                    </button>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#editNewAddress2">
+                                        <img src="./images/icons/edit-icon.svg"/>
+                                    </button>
+
+                                    <!-- START :: Edit Address modal -->
+                                    <div class="modal fade address-popup" id="editNewAddress2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header header-feedback">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="modal-info">
+                                                        <h2 class="h2 text-center text-uppercase modal-address-title">Edit ADD Address</h2>
+                                                        <form class="text-center">
+                                                            <div class="form-group">
+                                                                <input type="text" class="main-input" value="Gamasa" placeholder="Address Name*"/>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <select class="main-select" value="Dakahlia">
+                                                                    <option>
+                                                                        Area*
+                                                                    </option>
+                                                                    <option value="Cairo">
+                                                                        Cairo
+                                                                    </option>
+                                                                    <option value="Mansoura">
+                                                                        Mansoura
+                                                                    </option>
+                                                                    <option value="Damietta">
+                                                                        Damietta
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="text" class="main-input" placeholder="Block*"/>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="text" class="main-input" placeholder="Street*"/>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="text" class="main-input" placeholder="Building/House No.*"/>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="text" class="main-input" placeholder="Floor (Optional)"/>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <textarea class="main-textarea" rows="3" placeholder="Other Instructions"></textarea>
+                                                            </div>
+                                                            <div class="form-group submit-btn">
+                                                                <button type="button" class="btn main-btn transparent-btn text-uppercase" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#viewMap2">
+                                                                    View Map
+                                                                </button>
+                                                                <button type="submit" class="btn main-btn text-uppercase">Add Address</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END :: Edit Address modal -->
+
+                                    <!-- START :: View Map -->
+                                    <div class="modal fade address-popup" id="viewMap2" tabindex="-1" aria-labelledby="viewMap2Label" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header header-feedback">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="modal-info">
+                                                        <h2 class="h2 text-center text-uppercase modal-address-title">Select your location</h2>
+                                                        <form class="text-center">
+                                                            <div class="form-group google-map-wrapper">
+                                                                <input id="pac-input" class="controls" type="text" placeholder="Search for location"/>
+                                                                <img src="./images/icons/my-location.svg" />
+                                                                <div id="map"></div>
+                                                            </div>
+                                                            <div class="form-group submit-btn">
+                                                                <button type="submit" class="btn main-btn text-uppercase">Confirm</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END :: View Map -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END :: Address Card -->
+                    </div>
+
+                    <!-- Add A New Address -->
+                    <button type="button" class="btn main-btn text-uppercase add-new-address-btn" data-bs-toggle="modal" data-bs-target="#addNewAddress">
+                        Add New Address
+                        <img src="./images/icons/light-green-close-icon.svg" alt="add new address"/>
+                    </button>
+
+                    <!-- START :: Address modal -->
+                    <div class="modal fade address-popup" id="addNewAddress" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header header-feedback">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal-info">
+                                        <h2 class="h2 text-center text-uppercase modal-address-title">ADD Address</h2>
+                                        <form class="text-center">
+                                            <div class="form-group">
+                                                <input type="text" class="main-input" placeholder="Address Name*"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="main-select">
+                                                    <option>
+                                                        Area*
+                                                    </option>
+                                                    <option value="Cairo">
+                                                        Cairo
+                                                    </option>
+                                                    <option value="Mansoura">
+                                                        Mansoura
+                                                    </option>
+                                                    <option value="Damietta">
+                                                        Damietta
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="main-input" placeholder="Block*"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="main-input" placeholder="Street*"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="main-input" placeholder="Building/House No.*"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="main-input" placeholder="Floor (Optional)"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea class="main-textarea" rows="3" placeholder="Other Instructions"></textarea>
+                                            </div>
+                                            <div class="form-group submit-btn">
+                                                <button type="button" class="btn main-btn transparent-btn text-uppercase" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#viewMap2">
+                                                    View Map
+                                                </button>
+                                                <button type="submit" class="btn main-btn text-uppercase">Add Address</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END :: Address modal -->
+
+                    <!-- START :: View Map -->
+                    <div class="modal fade address-popup" id="viewMap3" tabindex="-1" aria-labelledby="viewMap3Label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header header-feedback">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal-info">
+                                        <h2 class="h2 text-center text-uppercase modal-address-title">Select your location</h2>
+                                        <form class="text-center">
+                                            <div class="form-group google-map-wrapper">
+                                                <input id="pac-input" class="controls" type="text" placeholder="Search for location"/>
+                                                <img src="./images/icons/my-location.svg" />
+                                                <div id="map"></div>
+                                            </div>
+                                            <div class="form-group submit-btn">
+                                                <button type="submit" class="btn main-btn text-uppercase">Confirm</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END :: View Map -->
+
+                </div>
+                <!-- END :: Panel Actions -->
+
+            </div>
+        </section>
+        <!-- END :: User Account -->
+
+        <!-- START :: Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="logo-and-menu d-flex justify-content-between">
+                    <a href="#" class="footer-logo">
+                        <img src="./images/icons/second-logo.svg" alt="Balloony" title="Balloony"/>
+                    </a>
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <ul class="list-unstyled menu-list">
+                                <li>
+                                    <a href="#">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Terms and Conditions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        About Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <ul class="list-unstyled menu-list">
+                                <li>
+                                    <a href="#">
+                                        Delivery Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Track Order
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <ul class="list-unstyled menu-list">
+                                <li>
+                                    <a href="#">
+                                        FAQs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Contact Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <div class="footer-social-media">
+                                <p>
+                                    FIND US
+                                </p>
+                                <div class="">
+                                    <a href="#" title="instagram">
+                                        <img src="./images/icons/instagram.svg" alt="instagram" title="instagram"/>
+                                    </a>
+                                    <a href="#" title="twitter">
+                                        <img src="./images/icons/twitter.svg" alt="twitter" title="twitter"/>
+                                    </a>
+                                    <a href="#" title="whatsapp">
+                                        <img src="./images/icons/whatsapp.svg" alt="whatsapp" title="whatsapp"/>
+                                    </a>
+                                    <a href="#" title="facebook">
+                                        <img src="./images/icons/facebook.svg" alt="facebook" title="facebook"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <p>
+                            © 2022. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <p>
+                            Powered By Lorem Ipsum
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END :: Footer -->
+
+        <!-- JavaScript files -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Select 2 Plugin -->
+        <script src="js/select2.min.js"></script>
+        <!-- Related to Google Map - BUT YOU SHOULD ADD YOUR_API_KEY-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initAutocomplete&libraries=places&v=weekly" async></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

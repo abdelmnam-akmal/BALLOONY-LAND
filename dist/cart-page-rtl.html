@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>Cart Page - RTL</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.rtl.min.css"/>
+
+        <!-- Fontawesome 5 -->
+        <link rel="stylesheet" href="css/fontawesome.min.css"/>
+
+        <!-- RateYou Default Style -->
+        <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+        
+        <!-- Slick CSS -->
+        <link rel="stylesheet" href="css/slick.css" />
+
+        <!-- Ion Range Style -->
+        <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+
+        <!-- Google Fonts --> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;600;700;900&display=swap" />
+
+        <!-- Style file -->
+        <link rel="stylesheet" href="css/style.css"/>
+
+        <!-- Style file RTL -->
+        <link rel="stylesheet" href="css/style-rtl.css"/>
+    </head>
+
+    <body>
+
+        <!-- START :: Top Nav -->
+        <section class="top-nav">
+            <div class="container">
+                <div class="top-nav-icons d-flex justify-content-end align-items-center">
+                    <div class="top-nav-icons__main-icons">
+                        <a href="#">
+                            <img src="./images/icons/cart-icon.svg" alt="Cart" title="Cart"/>
+                            <span class="cart-count"> 01 </span>
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/heart-icon.svg" alt="Favorite" title="Favorite"/>
+                        </a>
+                        <a href="#">
+                            <img src="./images/icons/search-icon.svg" alt="Search" title="Search"/>
+                        </a>
+                    </div>
+                    <!-- END :: Main Icons -->
+                    <div class="top-nav-icons__dropdown-icons d-flex">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./images/icons/user-icon.svg" alt="User" title="User" />
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li>
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./images/icons/language-icon.svg" alt="language" title="language" />
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                <li>
+                                    <a class="dropdown-item" href="#">English</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Arabic</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END :: Dropdown Icons -->
+                </div>
+            </div>
+        </section>
+        <!-- END :: Top Nav -->
+
+        <!-- START :: Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/icons/logo.svg" alt="Balloony Land" title="Balloony Land" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">Balloons</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Toys</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Party Supplies</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Catering</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link" href="#">Occasions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Party</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Customize</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Track Order</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END :: Navbar -->
+
+        <!-- START :: Top Header -->
+        <section class="top-header">
+            <div class="overlay"></div>
+            <img src="./images/global/cart-bg.svg" alt="Cart"/>
+            <h1 class="h1 top-header__title text-uppercase text-center">cart</h1>
+        </section>
+        <!-- END :: Top Header -->
+
+        <!-- START :: breadcrumb -->
+        <section class="breadcrumb-content" aria-label="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item text-uppercase"><a href="#">Categories</a></li>
+                    <li class="breadcrumb-item text-uppercase active" aria-current="page"><a href="#">cart</a></li>
+                  </ol>
+            </div>
+        </section>
+        <!-- END :: breadcrumb -->
+
+        <!-- START :: Cart -->
+        <section class="cart-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-9 cart-list-detail"> <!-- START :: list cart -->
+                        <ul class="list-unstyled cart-list-container">
+                            <li class="cart-list-item">
+                                <button type="button" class="btn-close-cart"><img src="images/icons/close-icon.svg" alt="close icon"></button>
+                                <div class="cart-list-img">
+                                    <img src="images/global/card-image.svg" alt="cart list">
+                                </div>
+                                <div class="cart-list-desc">
+                                    <div>
+                                        <h6 class="h6 text-capitalize h-cart">Name : <span class="text-capitalize">Girls Doll</span></h6>
+                                        <span class="dimesnions d-block">Dimesnions : <span>30×50</span></span>
+                                        <div>
+                                            <div class="product-num">
+                                                <button id="increase" class="btn plus"><img src="images/icons/plus-icon.svg" alt="plus"></button>
+                                                <input id="inputCounter" type="text" value="3" name="number" readonly>
+                                                <button id="decrease" class="btn minus"><img src="images/icons/minus-icon.svg" alt="minus"></button>
+                                            </div>
+                                            <span class="price">80.000 KD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-list-item">
+                                <button type="button" class="btn-close-cart"><img src="images/icons/close-icon.svg" alt="close icon"></button>
+                                <div class="cart-list-img">
+                                    <img src="images/global/card-image.svg" alt="cart list">
+                                </div>
+                                <div class="cart-list-desc">
+                                    <div>
+                                        <h6 class="h6 text-capitalize h-cart">Name : <span class="text-capitalize">Girls Doll</span></h6>
+                                        <span class="dimesnions d-block">Dimesnions : <span>30×50</span></span>
+                                        <div>
+                                            <div class="product-num">
+                                                <button id="increase" class="btn plus"><img src="images/icons/plus-icon.svg" alt="plus"></button>
+                                                <input id="inputCounter" type="text" value="3" name="number" readonly>
+                                                <button id="decrease" class="btn minus"><img src="images/icons/minus-icon.svg" alt="minus"></button>
+                                            </div>
+                                            <span class="price">21.000 KD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-list-item">
+                                <button type="button" class="btn-close-cart"><img src="images/icons/close-icon.svg" alt="close icon"></button>
+                                <div class="cart-list-img">
+                                    <img src="images/global/card-image.svg" alt="cart list">
+                                </div>
+                                <div class="cart-list-desc">
+                                    <div>
+                                        <h6 class="h6 text-capitalize h-cart">Name : <span class="text-capitalize">Girls Doll</span></h6>
+                                        <span class="dimesnions d-block">Dimesnions : <span>30×50</span></span>
+                                        <div>
+                                            <div class="product-num">
+                                                <button id="increase" class="btn plus"><img src="images/icons/plus-icon.svg" alt="plus"></button>
+                                                <input id="inputCounter" type="text" value="3" name="number" readonly>
+                                                <button id="decrease" class="btn minus"><img src="images/icons/minus-icon.svg" alt="minus"></button>
+                                            </div>
+                                            <span class="price">80.000 KD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="text-uppercase btn-clear">clear all</button>
+                    </div> <!-- END :: list cart -->
+                    <aside class="col-12 col-lg-3 product-delivery"> <!-- START :: Product Delivery -->
+                        <div class="product-promo-code">
+                            <h4 class="h4 text-uppercase h-promo-code">promo code</h4>
+                            <div class="input-code">
+                                <input type="text" placeholder="Enter Promo Code">
+                                <!-- Please add class "promo-remove" and replace the element text to Remove, if you need the user remove the code he written -->
+                                <button type="button" class="main-btn text-uppercase">apply</button>
+                            </div>
+                            <!-- Please add class "promo-invalid" and replace the text to "invalid code" to make the Element invalied  -->
+                            <span class="d-block text-capitalize promo-code">promo code applied
+                                <!-- Please add src "images/icons/invalid-code.svg" to the img to make it invalied  -->
+                                <img src="images/icons/promo-applied.svg" alt="Promo Applied">
+                            </span>
+                        </div>
+                        <div class="product-promo-code">
+                            <h4 class="h4 text-uppercase h-promo-code">summary</h4>
+                            <ul class="list-promo-code list-unstyled mb-0">
+                                <li>
+                                    <span class="d-block item-name">Items</span>
+                                    <span class="d-block">2</span>
+                                </li>
+                                <li>
+                                    <span class="d-block item-name">Products Total</span>
+                                    <span class="d-block">80.000 KWD</span>
+                                </li>
+                                <li>
+                                    <span class="d-block item-name">Delivery Charge</span>
+                                    <span class="d-block">0.000 KWD</span>
+                                </li>
+                                <li class="subtotal">
+                                    <span class="d-block item-name">SubTotal</span>
+                                    <span class="d-block">150.000 KWD</span>
+                                </li>
+                                <button type="button" class="btn-cart main-btn main-active">continue shopping</button>
+                                <button type="button" class="btn-cart main-btn btn-proceed" data-bs-toggle="modal" href="#exampleModalToggle" role="button">proceed to checkout</button>
+                            </ul>
+                        </div>
+                        <div class="product-promo-code">
+                            <h4 class="h4 text-uppercase h-promo-code">Delivery Details</h4>
+                            <div class="input-code">
+                                <ul class="list-promo-code list-unstyled mb-0">
+                                    <li>
+                                        <span class="d-block item-name">Delivery Date</span>
+                                        <span class="d-block">21 Jan 2022</span>
+                                    </li>
+                                    <li class="mb-0">
+                                        <span class="d-block item-name">Delivery Time</span>
+                                        <span class="d-block">80.000 KWD</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside> <!-- END :: Product Delivery -->
+                </div>
+            </div>
+        </section>
+        <!-- END :: Cart -->
+
+        <!-- START :: Modal Sign -->
+        <div class="modal fade modal-page" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1"> <!-- START :: SignIn Modal-->
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-uppercase" id="exampleModalToggleLabel">do you have an account</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-btns">
+                            <button type="button" class="text-uppercase main-btn sign-btns" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">sign up</button>
+                            <button type="button" class="text-uppercase main-btn sign-btns active" data-bs-target="#exampleModalToggle">sign in</button>
+                        </div>
+                        <form class="sign-form" action="">
+                            <div class="form-group">
+                                <input class="main-input" type="email" name="email" placeholder="Email Address*">
+                                <img src="./images/icons/envelope-icon.svg" class="form-group__icon" />
+                            </div>
+                            <div class="form-group">
+                                <input class="main-input" type="password" name="password" placeholder="Password*">
+                                <img src="./images/icons/lock-icon.svg" class="form-group__icon" />
+                            </div>
+                            <div class="form-group remember-me">
+                                <div>
+                                    <input type="checkbox" class="main-checkbox" id="agreement" />
+                                    <label for="agreement">Remember Me</label>
+                                </div>
+                                <a class="forgot-pass text-capitalize" href="#" title="Forgot Password">forgot password ?</a>
+                            </div>
+                            <div class="form-group mb-0">
+                                <button type="submit" class="main-btn text-uppercase">sign in</button>
+                                <span class="span-or">or</span>
+                                <button class="text-uppercase continue-guest">continue as guest</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- END :: SignIn Modal-->
+        <div class="modal fade modal-page" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1"> <!-- START :: SignUp Modal -->
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-uppercase" id="exampleModalToggleLabel2">join us</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-btns">
+                            <button type="button" class="text-uppercase main-btn sign-btns active" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">sign up</button>
+                            <button type="button" class="text-uppercase main-btn sign-btns" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">sign in</button>
+                        </div>
+                        <form class="sign-form" action="">
+                            <div class="form-group">
+                                <input type="text" class="main-input" placeholder="Full Name*" />
+                                <img src="./images/icons/fill-user-icon.svg" class="form-group__icon" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="main-input" placeholder="Email Address*" />
+                                <img src="./images/icons/envelope-icon.svg" class="form-group__icon" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="main-input" placeholder="Phone Number*" />
+                                <img src="./images/icons/phone-icon.svg" class="form-group__icon" />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="main-input" placeholder="Password*" />
+                                <img src="./images/icons/lock-icon.svg" class="form-group__icon" />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="main-input" placeholder="Confirm Password*" />
+                                <img src="./images/icons/lock-icon.svg" class="form-group__icon" />
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" class="main-checkbox" id="agreement" />
+                                <label for="agreement">I agree to the Privacy Policy and the Terms & Conditions Of Balloony Land</label>
+                            </div>
+                            <div class="form-group mb-0">
+                                <button type="submit" class="main-btn text-uppercase">sign up</button>
+                                <span class="span-or">or</span>
+                                <button class="text-uppercase continue-guest">continue as guest</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- END :: SignUp Modal -->
+          <!-- START :: Modal Sign -->
+
+        <!-- START :: Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="logo-and-menu d-flex justify-content-between">
+                    <a href="#" class="footer-logo">
+                        <img src="./images/icons/second-logo.svg" alt="Balloony" title="Balloony" />
+                    </a>
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <ul class="list-unstyled menu-list">
+                                <li>
+                                    <a href="#"> Privacy Policy </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Terms and Conditions </a>
+                                </li>
+                                <li>
+                                    <a href="#"> About Us </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <ul class="list-unstyled menu-list">
+                                <li>
+                                    <a href="#"> Delivery Policy </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Track Order </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <ul class="list-unstyled menu-list">
+                                <li>
+                                    <a href="#"> FAQs </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Contact Us </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <div class="footer-social-media">
+                                <p> FIND US </p>
+                                <div class="">
+                                    <a href="#" title="instagram">
+                                        <img src="./images/icons/instagram.svg" alt="instagram" title="instagram" />
+                                    </a>
+                                    <a href="#" title="twitter">
+                                        <img src="./images/icons/twitter.svg" alt="twitter" title="twitter" />
+                                    </a>
+                                    <a href="#" title="whatsapp">
+                                        <img src="./images/icons/whatsapp.svg" alt="whatsapp" title="whatsapp" />
+                                    </a>
+                                    <a href="#" title="facebook">
+                                        <img src="./images/icons/facebook.svg" alt="facebook" title="facebook" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <p>
+                            © 2022. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <p>
+                            Powered By Lorem Ipsum
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END :: Footer -->
+
+        <!-- JavaScript files -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.rateyo.min.js"></script> <!-- RateYou Plugin -->
+        <script src="js/slick.min.js"></script> <!-- Slick Slider -->
+        <script src="js/ion.rangeSlider.min.js"></script> <!-- Ion Range Plugin -->
+        <script src="js/script.js"></script>
+    </body>
+</html>

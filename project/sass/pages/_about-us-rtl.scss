@@ -1,0 +1,31 @@
+
+.about-us-content {
+    &.right-space {
+        margin-right: 0;
+        margin-left: 60px;
+        @media #{$mobile} {
+            margin: 0;
+        }
+    }
+    &.left-space {
+        margin-left: 0;
+        margin-right: 60px;
+        @media #{$mobile} {
+            margin: 0;
+        }
+    }
+}
+.about-us__img {
+    &.right-bg {
+        &::after {
+            right: auto;
+            left: -32px;
+        }
+    }
+    &.left-bg {
+        &::after {
+            left: auto;
+            right: -32px;
+        }
+    }
+}

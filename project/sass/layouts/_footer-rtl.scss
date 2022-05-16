@@ -1,0 +1,29 @@
+.footer {
+    .footer-social-media {
+        a {
+            &:not(:last-child) {
+                margin-right: 0;
+                margin-left: 25px;
+                @media #{$mobile} {
+                    margin-left: 13px;
+                }
+                @media #{$ipadPro} {
+                    margin-right: 0;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+    .menu-list{
+        padding: 0;
+    }
+}
+.footer-copyright {
+    .row {
+        > div {
+            &:last-child {
+                text-align: left;
+            }
+        }
+    }
+}

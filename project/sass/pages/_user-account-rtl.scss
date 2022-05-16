@@ -1,0 +1,23 @@
+// User Menu
+@import "../sections/user-account/user-menu-rtl";
+
+// User Invoice
+@import "../sections/user-account/invoice-rtl";
+
+.add-new-address-btn {
+    margin: 20px 0;
+    img {
+        margin-left: 0;
+        margin-right: 8px;
+    }
+}
+
+
+.address-popup {
+    input {
+        padding: 10px 15px !important;
+    }
+    .submit-btn {
+        text-align: right;
+    }
+}

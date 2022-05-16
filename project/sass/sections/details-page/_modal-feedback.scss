@@ -1,0 +1,45 @@
+.modal-content {
+    .header-feedback {
+        padding: 0;
+    }
+    .modal-info {
+        .title-feedback {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .review {
+            margin-bottom: 20px;
+            font-size: 15px;
+            display: block;
+        }
+        .form-feedback {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .rate-you {
+                margin: auto;
+            }
+            textarea {
+                margin-top: 20px;
+                width: 400px;
+                height: 250px !important;
+                padding: 10px;
+                background-color: #F8FCFA;
+                border-radius: 3px;
+                border: none;
+                font-size: 15px;
+                @media #{$mobile} {
+                    width: 100%;
+                }
+                &:focus-visible {
+                    outline: none;
+                }
+            }
+            .main-btn {
+                line-height: 20px;
+                margin-top: 20px;
+            }
+        }
+    }
+}

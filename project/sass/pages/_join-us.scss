@@ -1,0 +1,66 @@
+.join-us {
+    .main-title {
+        margin: 90px 0 100px;
+        @media #{$mobile} {
+            margin: 30px 0 65px;
+        }
+    }
+    .join-us__img {
+        @media #{$mobile} {
+            display: none;
+        }
+        img {
+            width: 100%;
+            height: auto
+        }
+    }
+}
+.join-us-form {
+    padding-right: 100px;
+    @media #{$mobile} {
+        padding: 0 !important;
+    }
+    .nav-tabs {
+        border: none;
+        margin-bottom: 30px;
+        @media #{$mobile} {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .nav-item {
+        button {
+            border: none;
+            box-shadow: none;
+            border-radius: 0;
+            background-color: $light-green-color !important;
+            width: 160px;
+            color: $green-color !important;
+            line-height: 27px;
+            @media #{$mobile} {
+                margin-top: 0;
+                line-height: 21px;
+            }
+            &.active {
+                background-color: $green-color !important;
+                color: $white-color !important;
+            }
+        }   
+    }
+    .main-btn {
+        margin-top: 30px;
+        @media #{$mobile} {
+            margin-top: 10px;
+        }
+    }
+    .forget-password {
+        text-align: right;
+        a {
+            color: #181818;
+            font-size: 14px;
+            @media #{$mobile} {
+                font-size: 13px;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.cart-page {
+    .cart-list-detail {
+        .cart-list-container {
+            padding-right: 0;
+            .cart-list-item {
+                .btn-close-cart {
+                    right: auto;
+                    left: 0;
+                }
+                .cart-list-img {
+                    margin-right: 0;
+                    margin-left: 40px;
+                    @media #{$maxSmallMobile} {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+/* START :: Modal Sign in and up style */
+.modal-page {
+    .modal-dialog {
+        .modal-content {
+            .modal-body {
+                .modal-btns {
+                    .sign-btns {
+                        margin-right: 0;
+                        margin-left: 2px;
+                        &:last-of-type {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* END :: Modal Sign in and up style */

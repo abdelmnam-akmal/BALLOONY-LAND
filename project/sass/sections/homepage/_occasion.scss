@@ -1,0 +1,133 @@
+.occasion {
+    margin: 70px 0;
+    @media #{$mobile} {
+        margin: 40px 0;
+    }
+    .row {
+        margin: 0;
+        > div {
+            padding: 0;
+        }
+    }
+    .view-more-btn {
+        margin-top: 30px;
+    }
+    // .custom-container {
+    //     > .row {
+    //         margin: 0 -5px;
+    //     }
+    // }
+    .main-title {
+        background: url('../images/global/occasion-bg.png') no-repeat center center;
+        background-size: cover;
+        height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 13px;
+        z-index: 2;
+        margin-bottom: 5px;
+        @media #{$mobile} {
+            height: 80px;
+        }
+        &::before {
+            bottom: 20px;
+            z-index: 2;
+            @media #{$mobile} {
+                bottom: 21px;
+            }
+        }
+        &:after {
+            content: "";
+            display: block;
+            background-color: rgba($color: $white-color, $alpha: 0.8);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            z-index: -1;
+        }
+    }
+}
+.occasion-card {
+    position: relative;
+    .occasion-card__title {
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        top: 5px;
+        background: transparent linear-gradient(180deg, #E8CCCBC4 0%, #FFFFFF78 45%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+        padding-top: 50px;
+        @media #{$mobile} {
+            padding-left: 19px;
+            padding-top: 19px;
+        }
+        @media #{$ipadPro} {
+            padding-left: 25px;
+            padding-top: 25px;
+        }
+        a {
+            font-size: 30px;
+            color: #2A2929;
+            width: max-content;
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+            }
+            @media #{$mobile} {
+                font-size: 23px;
+            }
+            @media #{$ipadPro} {
+                font-size: 18px;
+            }
+        }
+        span {
+            font-size: 24px;
+            display: block;
+            @media #{$mobile} {
+                font-size: 20px;
+                margin-bottom: 4px;
+            }
+            @media #{$ipadPro} {
+                font-size: 17px;
+            }
+        }
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+        padding: 5px;
+        @media #{$mobile} {
+            height: 210px !important;
+        }
+    }
+    &.vertical-card {
+        img {
+            height: 688px;
+        }
+    }
+    &.horizontal-card {
+        img {
+            height: 344px;
+        }
+    }
+    &.square-card {
+        img {
+            height: 344px;
+        }
+    }
+}
